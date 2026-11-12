@@ -1,0 +1,359 @@
+# Pages CMS configuration — https://pagescms.org
+# Every collection below is stored as JSON in /content and rendered on the
+# website by js/cms.js. Static HTML stays in the pages as a fallback.
+
+media:
+  input: img
+  output: img
+  extensions: [png, jpg, jpeg, webp, gif, svg]
+
+content:
+  # ---------------------------------------------------------------- settings
+  - name: settings
+    label: Site settings
+    type: file
+    path: content/settings.json
+    fields:
+      - name: site
+        label: Contact & social
+        type: object
+        fields:
+          - name: phone
+            label: Phone numbers
+            type: string
+            required: true
+          - name: email
+            label: Public email
+            type: string
+            required: true
+          - name: address_en
+            label: Address (English)
+            type: string
+          - name: address_km
+            label: Address (Khmer)
+            type: string
+          - name: map_url
+            label: Google Maps link
+            type: string
+          - name: facebook_url
+            label: Facebook page URL
+            type: string
+          - name: youtube_url
+            label: YouTube channel URL
+            type: string
+          - name: linkedin_url
+            label: LinkedIn URL
+            type: string
+          - name: hours_weekday_label_en
+            label: Weekday label (English)
+            type: string
+          - name: hours_weekday_label_km
+            label: Weekday label (Khmer)
+            type: string
+          - name: hours_weekday_en
+            label: Weekday hours (English)
+            type: string
+          - name: hours_weekday_km
+            label: Weekday hours (Khmer)
+            type: string
+          - name: hours_saturday_label_en
+            label: Saturday label (English)
+            type: string
+          - name: hours_saturday_label_km
+            label: Saturday label (Khmer)
+            type: string
+          - name: hours_saturday_en
+            label: Saturday hours (English)
+            type: string
+          - name: hours_saturday_km
+            label: Saturday hours (Khmer)
+            type: string
+          - name: hours_sunday_label_en
+            label: Sunday label (English)
+            type: string
+          - name: hours_sunday_label_km
+            label: Sunday label (Khmer)
+            type: string
+          - name: hours_sunday_en
+            label: Sunday hours (English)
+            type: string
+          - name: hours_sunday_km
+            label: Sunday hours (Khmer)
+            type: string
+
+  # ----------------------------------------------------------------- courses
+  - name: courses
+    label: Courses
+    type: file
+    path: content/courses.json
+    fields:
+      - name: courses
+        label: Course list
+        type: object
+        list: true
+        fields:
+          - name: title_en
+            label: Course name (English)
+            type: string
+            required: true
+          - name: title_km
+            label: Course name (Khmer)
+            type: string
+          - name: group
+            label: Section
+            type: select
+            required: true
+            options:
+              values:
+                - name: local
+                  label: Local program
+                - name: international
+                  label: International certification
+          - name: code
+            label: Short code
+            type: string
+            description: Shown in the top-right of the card, e.g. GD or CCS-100
+          - name: icon
+            label: Font Awesome icon class
+            type: string
+            description: e.g. fa fa-palette, fa fa-code, fa fa-camera
+          - name: tag_en
+            label: Category tag (English)
+            type: string
+          - name: tag_km
+            label: Category tag (Khmer)
+            type: string
+          - name: curriculum_en
+            label: Curriculum line (English)
+            type: string
+          - name: curriculum_km
+            label: Curriculum line (Khmer)
+            type: string
+          - name: points_en
+            label: Highlights (English)
+            type: text
+            description: One highlight per line
+          - name: points_km
+            label: Highlights (Khmer)
+            type: text
+            description: One highlight per line
+          - name: duration_en
+            label: Duration (English)
+            type: string
+          - name: duration_km
+            label: Duration (Khmer)
+            type: string
+          - name: class_size_en
+            label: Class size (English)
+            type: string
+          - name: class_size_km
+            label: Class size (Khmer)
+            type: string
+          - name: tuition
+            label: Tuition
+            type: string
+            description: e.g. $160.00
+          - name: note_en
+            label: Extra note (English, optional)
+            type: string
+          - name: note_km
+            label: Extra note (Khmer, optional)
+            type: string
+
+  # -------------------------------------------------------------------- news
+  - name: news
+    label: News
+    type: file
+    path: content/news.json
+    fields:
+      - name: news
+        label: News posts
+        type: object
+        list: true
+        fields:
+          - name: title_en
+            label: Title (English)
+            type: string
+            required: true
+          - name: title_km
+            label: Title (Khmer)
+            type: string
+          - name: excerpt_en
+            label: Short description (English)
+            type: text
+          - name: excerpt_km
+            label: Short description (Khmer)
+            type: text
+          - name: date_en
+            label: Date label (English)
+            type: string
+            description: Free text, e.g. November 2026
+          - name: date_km
+            label: Date label (Khmer)
+            type: string
+          - name: image
+            label: Image
+            type: image
+          - name: badge_en
+            label: Badge (English, optional)
+            type: string
+          - name: badge_km
+            label: Badge (Khmer, optional)
+            type: string
+          - name: featured
+            label: Feature this post
+            type: boolean
+            description: Featured posts use the large layout (only the first featured post is used)
+          - name: link_label_en
+            label: Button text (English)
+            type: string
+          - name: link_label_km
+            label: Button text (Khmer)
+            type: string
+          - name: link
+            label: Button link
+            type: string
+            description: e.g. booking.html or https://...
+          - name: second_link_label_en
+            label: Second button text (English, optional)
+            type: string
+          - name: second_link_label_km
+            label: Second button text (Khmer, optional)
+            type: string
+          - name: second_link
+            label: Second button link
+            type: string
+
+  # ------------------------------------------------------------------ events
+  - name: events
+    label: Events
+    type: file
+    path: content/events.json
+    fields:
+      - name: events
+        label: Event list
+        type: object
+        list: true
+        fields:
+          - name: title_en
+            label: Event title (English)
+            type: string
+            required: true
+          - name: title_km
+            label: Event title (Khmer)
+            type: string
+          - name: description_en
+            label: Description (English)
+            type: text
+          - name: description_km
+            label: Description (Khmer)
+            type: text
+          - name: day
+            label: Day number
+            type: string
+            description: e.g. 20
+          - name: month_en
+            label: Month (English)
+            type: string
+            description: e.g. Nov 2026
+          - name: month_km
+            label: Month (Khmer)
+            type: string
+          - name: time_en
+            label: Time (English)
+            type: string
+          - name: time_km
+            label: Time (Khmer)
+            type: string
+          - name: location_en
+            label: Location (English)
+            type: string
+          - name: location_km
+            label: Location (Khmer)
+            type: string
+          - name: cta_en
+            label: Button text (English)
+            type: string
+          - name: cta_km
+            label: Button text (Khmer)
+            type: string
+          - name: link
+            label: Button link
+            type: string
+
+  # ----------------------------------------------------------------- gallery
+  - name: gallery
+    label: Gallery
+    type: file
+    path: content/gallery.json
+    fields:
+      - name: photos
+        label: Photos
+        type: object
+        list: true
+        fields:
+          - name: image
+            label: Photo
+            type: image
+            required: true
+          - name: category
+            label: Category
+            type: select
+            required: true
+            options:
+              values:
+                - name: graduation
+                  label: Graduation
+                - name: class
+                  label: Class activities
+                - name: campus
+                  label: Our campus
+          - name: caption_en
+            label: Caption (English)
+            type: string
+          - name: caption_km
+            label: Caption (Khmer)
+            type: string
+          - name: alt_en
+            label: Alternative text (English)
+            type: string
+            description: Describes the photo for screen readers
+          - name: alt_km
+            label: Alternative text (Khmer)
+            type: string
+
+  # ------------------------------------------------------------- instructors
+  - name: instructors
+    label: Instructors
+    type: file
+    path: content/instructors.json
+    fields:
+      - name: instructors
+        label: Instructor list
+        type: object
+        list: true
+        fields:
+          - name: role_en
+            label: Role (English)
+            type: string
+            required: true
+            description: e.g. Design Instructor
+          - name: role_km
+            label: Role (Khmer)
+            type: string
+          - name: subject_en
+            label: Subject (English)
+            type: string
+            description: e.g. Graphic Design
+          - name: subject_km
+            label: Subject (Khmer)
+            type: string
+          - name: photo
+            label: Photo
+            type: image
+          - name: alt_en
+            label: Photo description (English)
+            type: string
+          - name: alt_km
+            label: Photo description (Khmer)
+            type: string

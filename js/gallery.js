@@ -1,9 +1,12 @@
 (function () {
-    var tabs = document.querySelectorAll('.gallery-tab');
-    var items = document.querySelectorAll('.gallery-item');
-    if (!tabs.length || !items.length) return;
+    var current = 'all';
 
     function filter(category) {
+        current = category;
+        var tabs = document.querySelectorAll('.gallery-tab');
+        var items = document.querySelectorAll('.gallery-item');
+        if (!tabs.length || !items.length) return;
+
         for (var i = 0; i < items.length; i++) {
             var match = category === 'all' || items[i].getAttribute('data-category') === category;
             items[i].classList.toggle('is-hidden', !match);
@@ -15,9 +18,13 @@
         }
     }
 
-    for (var i = 0; i < tabs.length; i++) {
-        tabs[i].addEventListener('click', function () {
-            filter(this.getAttribute('data-filter'));
-        });
-    }
+    document.addEventListener('click', function (e) {
+        var tab = e.target.closest ? e.target.closest('.gallery-tab') : null;
+        if (!tab) return;
+        filter(tab.getAttribute('data-filter'));
+    });
+
+    document.addEventListener('cms:gallery', function () {
+        filter(current);
+    });
 })();

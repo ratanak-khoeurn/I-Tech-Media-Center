@@ -6,6 +6,14 @@
     --accent-dark: #E08C12;
     --light: #F1F8FF;
     --dark: #0F172B;
+    --page-gutter: clamp(1.5rem, 4vw, 3rem);
+    --section-y: 4rem;
+}
+
+@media (max-width: 767.98px) {
+    :root {
+        --section-y: 2.75rem;
+    }
 }
 
 .ff-secondary {
@@ -710,6 +718,43 @@
 }
 
 
+/*** Why Choose Us ***/
+.why-item {
+    padding-right: 1.5rem;
+}
+
+.why-item h5 {
+    display: flex;
+    align-items: flex-start;
+    gap: .6rem;
+    margin-bottom: .75rem;
+    color: #14293D;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.why-item h5 i {
+    flex-shrink: 0;
+    margin-top: .3rem;
+    color: var(--primary);
+    font-size: .9rem;
+}
+
+.why-item p {
+    margin-bottom: 0;
+    color: #5A6B7B;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+@media (max-width: 991.98px) {
+    .why-item {
+        padding-right: 0;
+    }
+}
+
+
 /*** Course List ***/
 .nav-pills .nav-item .active {
     border-bottom: 2px solid var(--primary);
@@ -737,6 +782,328 @@
     .course-icon + div h5 {
         flex-wrap: wrap;
         gap: 4px;
+    }
+}
+
+
+/*** Course Catalog ***/
+.course-intro {
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+.course-intro-text {
+    color: #5A6B7B;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.course-section {
+    padding: var(--section-y) 0;
+}
+
+.course-section-local {
+    background: #F4F9FD;
+}
+
+.course-section-intl {
+    color: #FFFFFF;
+    background:
+        radial-gradient(circle at 12% 18%, rgba(249, 160, 31, .2), transparent 42%),
+        linear-gradient(135deg, #0F4C75 0%, var(--primary) 58%, var(--primary-dark) 100%);
+}
+
+.course-section-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.course-section-head h2 {
+    font-size: clamp(1.6rem, 3vw, 2.25rem);
+    margin: .5rem 0 .5rem;
+}
+
+.course-section-head p {
+    color: #5A6B7B;
+    max-width: 640px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.course-section-intl .course-section-head h2 {
+    color: #FFFFFF;
+}
+
+.course-section-intl .course-section-head p {
+    color: rgba(255, 255, 255, .82);
+}
+
+.course-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.course-eyebrow i {
+    color: var(--accent);
+}
+
+.course-section-intl .course-eyebrow {
+    color: #FFD08A;
+}
+
+.course-section-intl .course-eyebrow i {
+    color: #FFD08A;
+}
+
+.course-count {
+    flex-shrink: 0;
+    padding: .45rem 1.1rem;
+    border: 1px solid rgba(33, 137, 202, .22);
+    border-radius: 999px;
+    background: #FFFFFF;
+    color: var(--primary);
+    font-size: .85rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.course-section-intl .course-count {
+    border-color: rgba(255, 255, 255, .38);
+    background: rgba(255, 255, 255, .14);
+    color: #FFFFFF;
+}
+
+.course-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid rgba(33, 137, 202, .1);
+    border-radius: 20px;
+    background: #FFFFFF;
+    box-shadow: 0 12px 32px rgba(16, 42, 67, .08);
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 22px 46px rgba(16, 42, 67, .16);
+}
+
+.course-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary), #5FB7EA 55%, var(--accent));
+}
+
+.course-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.6rem 1.5rem 0;
+}
+
+.course-card-icon {
+    flex-shrink: 0;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: linear-gradient(135deg, var(--primary), #5FB7EA);
+    box-shadow: 0 10px 20px rgba(33, 137, 202, .28);
+    color: #FFFFFF;
+    font-size: 1.4rem;
+}
+
+.course-code {
+    padding: .3rem .7rem;
+    border-radius: 999px;
+    background: #F1F6FA;
+    color: #7C8DA0;
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    white-space: nowrap;
+}
+
+.course-card-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 1.25rem 1.5rem 1.5rem;
+}
+
+.course-tag {
+    display: inline-block;
+    margin-bottom: .5rem;
+    color: var(--primary);
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.course-title {
+    margin-bottom: .35rem;
+    color: #14293D;
+    font-size: 1.15rem;
+    line-height: 1.35;
+}
+
+.course-curriculum {
+    margin-bottom: 1rem;
+    color: #6B7C8E;
+    font-size: .9rem;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.course-points {
+    display: grid;
+    gap: .5rem;
+    margin: 0 0 1.25rem;
+    padding: 0;
+    list-style: none;
+}
+
+.course-points li {
+    position: relative;
+    padding-left: 1.5rem;
+    color: #425466;
+    font-size: .9rem;
+    line-height: 1.45;
+}
+
+.course-points li::before {
+    content: "\f00c";
+    position: absolute;
+    top: .15rem;
+    left: 0;
+    color: var(--accent);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: .72rem;
+}
+
+.course-meta {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: .5rem;
+    margin-top: auto;
+    padding-top: 1rem;
+    border-top: 1px solid #EAF1F6;
+}
+
+.course-meta span {
+    display: flex;
+    flex-direction: column;
+    gap: .1rem;
+    min-width: 0;
+    color: #7B8B9C;
+    font-size: .75rem;
+}
+
+.course-meta i {
+    margin-bottom: .2rem;
+    color: var(--primary);
+    font-size: .85rem;
+}
+
+.course-meta strong {
+    color: #14293D;
+    font-size: .92rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.course-meta small {
+    font-size: .68rem;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+
+.course-note {
+    margin: .75rem 0 0;
+    color: var(--accent-dark);
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.course-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: .9rem 1.5rem;
+    border-top: 1px solid #EAF1F6;
+    background: #F4F9FD;
+    color: var(--primary);
+    font-size: .9rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background .3s ease, color .3s ease;
+}
+
+.course-cta i {
+    transition: transform .3s ease;
+}
+
+.course-card:hover .course-cta {
+    background: var(--primary);
+    color: #FFFFFF;
+}
+
+.course-card:hover .course-cta i {
+    transform: translateX(4px);
+}
+
+.course-intl-note {
+    margin: 2.5rem auto 0;
+    max-width: 780px;
+    color: rgba(255, 255, 255, .82);
+    font-size: .9rem;
+    line-height: 1.6;
+}
+
+.course-intl-note i {
+    margin-right: .35rem;
+    color: #FFD08A;
+}
+
+@media (max-width: 767.98px) {
+    .course-section-head {
+        align-items: flex-start;
+        margin-bottom: 2rem;
+    }
+
+    .course-card-top {
+        padding: 1.4rem 1.25rem 0;
+    }
+
+    .course-card-body {
+        padding: 1.1rem 1.25rem 1.35rem;
+    }
+
+    .course-cta {
+        padding: .85rem 1.25rem;
     }
 }
 
@@ -1022,9 +1389,46 @@
 .container-xl,
 .container-lg,
 .container-md,
-.container-sm,
+.container-sm {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* One gutter for every page, aligned with the navbar */
 .container {
     max-width: 100%;
+    padding-left: var(--page-gutter);
+    padding-right: var(--page-gutter);
+}
+
+
+/*** Page Spacing ***/
+/* Every page section uses the same vertical rhythm */
+.container-xxl.py-5 {
+    padding-top: var(--section-y) !important;
+    padding-bottom: var(--section-y) !important;
+}
+
+.course-intro-section {
+    padding: var(--section-y) 0 1.5rem;
+}
+
+/* Inner-page banner: same band height on every page, no extra margins */
+.page-hero {
+    min-height: 420px;
+    margin-bottom: 0;
+}
+
+.page-hero .container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+@media (max-width: 767.98px) {
+    .page-hero {
+        min-height: 320px;
+    }
 }
 
 

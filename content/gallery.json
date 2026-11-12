@@ -1,0 +1,156 @@
+{
+  "photos": [
+    {
+      "image": "gallery/graduation-1.jpg",
+      "category": "graduation",
+      "alt_en": "Certificate presentation ceremony",
+      "alt_km": "ពិធីប្រគល់វិញ្ញាបនបត្រ",
+      "caption_en": "Certificate presentation ceremony",
+      "caption_km": "ពិធីប្រគល់វិញ្ញាបនបត្រ"
+    },
+    {
+      "image": "gallery/graduation-2.jpg",
+      "category": "graduation",
+      "alt_en": "Digital skills certificate award",
+      "alt_km": "ការផ្តល់វិញ្ញាបនបត្រជំនាញឌីជីថល",
+      "caption_en": "Digital skills certificate award",
+      "caption_km": "ការផ្តល់វិញ្ញាបនបត្រជំនាញឌីជីថល"
+    },
+    {
+      "image": "gallery/graduation-3.jpg",
+      "category": "graduation",
+      "alt_en": "Graduates celebrate their achievement",
+      "alt_km": "អ្នកបញ្ចប់ការសិក្សាអបអរសមិទ្ធផលរបស់ពួកគេ",
+      "caption_en": "Graduates celebrate their achievement",
+      "caption_km": "អ្នកបញ្ចប់ការសិក្សាអបអរសមិទ្ធផលរបស់ពួកគេ"
+    },
+    {
+      "image": "gallery/graduation-4.jpg",
+      "category": "graduation",
+      "alt_en": "Certificate handover at I-Tech Media",
+      "alt_km": "ការប្រគល់វិញ្ញាបនបត្រនៅ I-Tech Media",
+      "caption_en": "Certificate handover at I-Tech Media",
+      "caption_km": "ការប្រគល់វិញ្ញាបនបត្រនៅ I-Tech Media"
+    },
+    {
+      "image": "gallery/graduation-5.jpg",
+      "category": "graduation",
+      "alt_en": "Workforce skills certificate",
+      "alt_km": "វិញ្ញាបនបត្រជំនាញការងារ",
+      "caption_en": "Workforce skills certificate",
+      "caption_km": "វិញ្ញាបនបត្រជំនាញការងារ"
+    },
+    {
+      "image": "gallery/graduation-6.jpg",
+      "category": "graduation",
+      "alt_en": "Team certificate presentation",
+      "alt_km": "ការប្រគល់វិញ្ញាបនបត្រដល់ក្រុម",
+      "caption_en": "Team certificate presentation",
+      "caption_km": "ការប្រគល់វិញ្ញាបនបត្រដល់ក្រុម"
+    },
+    {
+      "image": "gallery/graduation-7.jpg",
+      "category": "graduation",
+      "alt_en": "Graduation day group photo",
+      "alt_km": "រូបថតក្រុមថ្ងៃបញ្ចប់ការសិក្សា",
+      "caption_en": "Graduation day group photo",
+      "caption_km": "រូបថតក្រុមថ្ងៃបញ្ចប់ការសិក្សា"
+    },
+    {
+      "image": "gallery/class-1.jpg",
+      "category": "class",
+      "alt_en": "Computer lab practice",
+      "alt_km": "ការអនុវត្តក្នុងមន្ទីរកុំព្យូទ័រ",
+      "caption_en": "Computer lab practice",
+      "caption_km": "ការអនុវត្តក្នុងមន្ទីរកុំព្យូទ័រ"
+    },
+    {
+      "image": "gallery/class-2.jpg",
+      "category": "class",
+      "alt_en": "Guided practice session",
+      "alt_km": "វគ្គអនុវត្តដោយមានការណែនាំ",
+      "caption_en": "Guided practice session",
+      "caption_km": "វគ្គអនុវត្តដោយមានការណែនាំ"
+    },
+    {
+      "image": "gallery/class-3.jpg",
+      "category": "class",
+      "alt_en": "Students at their workstations",
+      "alt_km": "សិស្សនៅស្ថានីយការងាររបស់ពួកគេ",
+      "caption_en": "Students at their workstations",
+      "caption_km": "សិស្សនៅស្ថានីយការងាររបស់ពួកគេ"
+    },
+    {
+      "image": "gallery/class-4.jpg",
+      "category": "class",
+      "alt_en": "Hands-on computer class",
+      "alt_km": "ថ្នាក់កុំព្យូទ័រអនុវត្តផ្ទាល់ដៃ",
+      "caption_en": "Hands-on computer class",
+      "caption_km": "ថ្នាក់កុំព្យូទ័រអនុវត្តផ្ទាល់ដៃ"
+    },
+    {
+      "image": "gallery/class-5.jpg",
+      "category": "class",
+      "alt_en": "Learning together in the lab",
+      "alt_km": "រៀនជាមួយគ្នាក្នុងមន្ទីរ",
+      "caption_en": "Learning together in the lab",
+      "caption_km": "រៀនជាមួយគ្នាក្នុងមន្ទីរ"
+    },
+    {
+      "image": "gallery/class-6.jpg",
+      "category": "class",
+      "alt_en": "Evening computer class",
+      "alt_km": "ថ្នាក់កុំព្យូទ័រវេនល្ងាច",
+      "caption_en": "Evening computer class",
+      "caption_km": "ថ្នាក់កុំព្យូទ័រវេនល្ងាច"
+    },
+    {
+      "image": "gallery/class-7.jpg",
+      "category": "class",
+      "alt_en": "Practical lab session",
+      "alt_km": "វគ្គអនុវត្តក្នុងមន្ទីរ",
+      "caption_en": "Practical lab session",
+      "caption_km": "វគ្គអនុវត្តក្នុងមន្ទីរ"
+    },
+    {
+      "image": "gallery/class-8.jpg",
+      "category": "class",
+      "alt_en": "Classroom practice",
+      "alt_km": "ការអនុវត្តក្នុងថ្នាក់រៀន",
+      "caption_en": "Classroom practice",
+      "caption_km": "ការអនុវត្តក្នុងថ្នាក់រៀន"
+    },
+    {
+      "image": "gallery/class-9.jpg",
+      "category": "class",
+      "alt_en": "Study session in the lab",
+      "alt_km": "វគ្គសិក្សាក្នុងមន្ទីរ",
+      "caption_en": "Study session in the lab",
+      "caption_km": "វគ្គសិក្សាក្នុងមន្ទីរ"
+    },
+    {
+      "image": "gallery/campus-1.jpg",
+      "category": "campus",
+      "alt_en": "I-Tech Media campus entrance",
+      "alt_km": "ច្រកចូលបរិវេណ I-Tech Media",
+      "caption_en": "I-Tech Media campus entrance",
+      "caption_km": "ច្រកចូលបរិវេណ I-Tech Media"
+    },
+    {
+      "image": "gallery/campus-2.jpg",
+      "category": "campus",
+      "alt_en": "Campus lounge and study area",
+      "alt_km": "កន្លែងនិយាយលេង និងសិក្សាក្នុងបរិវេណ",
+      "caption_en": "Campus lounge and study area",
+      "caption_km": "កន្លែងនិយាយលេង និងសិក្សាក្នុងបរិវេណ"
+    },
+    {
+      "image": "gallery/campus-3.jpg",
+      "category": "campus",
+      "alt_en": "Main computer lab",
+      "alt_km": "មន្ទីរកុំព្យូទ័រចម្បង",
+      "caption_en": "Main computer lab",
+      "caption_km": "មន្ទីរកុំព្យូទ័រចម្បង"
+    }
+  ]
+}

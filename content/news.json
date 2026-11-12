@@ -1,0 +1,61 @@
+{
+  "news": [
+    {
+      "featured": true,
+      "image": "training-1.jpg",
+      "date_en": "November 2026",
+      "date_km": "វិច្ឆិកា 2026",
+      "badge_en": "Announcement",
+      "badge_km": "ការជូនដំណឹង",
+      "title_en": "New term enrollment is now open",
+      "title_km": "ការចុះឈ្មោះឆមាសថ្មី បើកហើយឥឡូវនេះ",
+      "excerpt_en": "Enroll in graphic design, video editing, 3D animation or IT certification programs. Morning, evening and weekend classes are available.",
+      "excerpt_km": "ចុះឈ្មោះក្នុងកម្មវិធីរចនាក្រាហ្វិក កាត់តវីដេអូ ចលនា 3D ឬវិញ្ញាបនបត្រ IT។ មានថ្នាក់ព្រឹក ល្ងាច និងចុងសប្តាហ៍។",
+      "link_label_en": "Enroll online",
+      "link_label_km": "ចុះឈ្មោះតាមអនឡាញ",
+      "link": "booking.html",
+      "second_link_label_en": "View courses",
+      "second_link_label_km": "មើលវគ្គសិក្សា",
+      "second_link": "menu.html"
+    },
+    {
+      "featured": false,
+      "image": "training-2.jpg",
+      "date_en": "October 2026",
+      "date_km": "តុលា 2026",
+      "title_en": "Pearson certification preparation",
+      "title_km": "ការរៀបចំសម្រាប់វិញ្ញាបនបត្រ Pearson",
+      "excerpt_en": "Prepare for Microsoft and IT Specialist certification exams with guided training and practice.",
+      "excerpt_km": "រៀបចំខ្លួនសម្រាប់ការប្រឡងវិញ្ញាបនបត្រ Microsoft និង IT Specialist ជាមួយការបណ្តុះបណ្តាលណែនាំ និងការអនុវត្ត។",
+      "link_label_en": "Read more",
+      "link_label_km": "អានបន្ថែម",
+      "link": "menu.html"
+    },
+    {
+      "featured": false,
+      "image": "training-3.jpg",
+      "date_en": "October 2026",
+      "date_km": "តុលា 2026",
+      "title_en": "Hands-on creative labs",
+      "title_km": "មន្ទីរច្នៃប្រឌិតអនុវត្តផ្ទាល់ដៃ",
+      "excerpt_en": "Practice on real projects in our computer and media labs with experienced instructors.",
+      "excerpt_km": "អនុវត្តលើគម្រោងពិត ក្នុងមន្ទីរកុំព្យូទ័រ និងមេឌៀរបស់យើង ជាមួយគ្រូបង្គោលដែលមានបទពិសោធន៍។",
+      "link_label_en": "Read more",
+      "link_label_km": "អានបន្ថែម",
+      "link": "service.html"
+    },
+    {
+      "featured": false,
+      "image": "training-4.jpg",
+      "date_en": "September 2026",
+      "date_km": "កញ្ញា 2026",
+      "title_en": "Career-focused training",
+      "title_km": "ការបណ្តុះបណ្តាលផ្តោតលើអាជីព",
+      "excerpt_en": "Build a portfolio and get guidance for the digital workplace.",
+      "excerpt_km": "កសាងផលប័ត្រការងារ និងទទួលបានការណែនាំសម្រាប់ការងារឌីជីថល។",
+      "link_label_en": "Read more",
+      "link_label_km": "អានបន្ថែម",
+      "link": "about.html"
+    }
+  ]
+}

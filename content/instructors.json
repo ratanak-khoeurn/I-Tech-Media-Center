@@ -1,0 +1,40 @@
+{
+  "instructors": [
+    {
+      "photo": "vannak.png",
+      "role_en": "Design Instructor",
+      "role_km": "គ្រូបង្គោលរចនា",
+      "subject_en": "Graphic Design",
+      "subject_km": "រចនាក្រាហ្វិក",
+      "alt_en": "Design Instructor",
+      "alt_km": "គ្រូបង្គោលរចនា"
+    },
+    {
+      "photo": "reaksmey.png",
+      "role_en": "Microsoft Office Instructor",
+      "role_km": "គ្រូបង្គោល Microsoft Office",
+      "subject_en": "MS Office",
+      "subject_km": "MS Office",
+      "alt_en": "Microsoft Office Instructor",
+      "alt_km": "គ្រូបង្គោល Microsoft Office"
+    },
+    {
+      "photo": "vibol.jpg",
+      "role_en": "Microsoft Office Instructor",
+      "role_km": "គ្រូបង្គោល Microsoft Office",
+      "subject_en": "MS Office",
+      "subject_km": "MS Office",
+      "alt_en": "Microsoft Office Instructor",
+      "alt_km": "គ្រូបង្គោល Microsoft Office"
+    },
+    {
+      "photo": "socheat.png",
+      "role_en": "Photo & Video Instructor",
+      "role_km": "គ្រូបង្គោលរូបថត និងវីដេអូ",
+      "subject_en": "Photography & Videography",
+      "subject_km": "ការថតរូប និងថតវីដេអូ",
+      "alt_en": "Photo & Video Instructor",
+      "alt_km": "គ្រូបង្គោលរូបថត និងវីដេអូ"
+    }
+  ]
+}

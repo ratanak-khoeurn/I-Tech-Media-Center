@@ -1,0 +1,24 @@
+{
+  "site": {
+    "phone": "(+855) 096 582 8662 / 092 426 205",
+    "email": "itechmediabusiness@gmail.com",
+    "map_url": "https://maps.app.goo.gl/xB9KVh53btreCQco7",
+    "facebook_url": "https://www.facebook.com/itechmediaschool",
+    "youtube_url": "https://www.youtube.com/@i-techmedia_school",
+    "linkedin_url": "https://www.linkedin.com/company/itechmediacam/",
+    "address_en": "Building #108, St. 472, Sangkat Toul Tom Poung I, Khan Chamkarmorn, Phnom Penh",
+    "address_km": "អគារ #108 ផ្លូវ 472 សង្កាត់ទូលទំពូងទី 1 ខណ្ឌចំការមន ភ្នំពេញ",
+    "hours_weekday_label_en": "Monday - Friday",
+    "hours_weekday_label_km": "ចន្ទ - សុក្រ",
+    "hours_weekday_en": "8:00 AM - 7:30 PM",
+    "hours_weekday_km": "8:00 ព្រឹក - 7:30 ល្ងាច",
+    "hours_saturday_label_en": "Saturday",
+    "hours_saturday_label_km": "សៅរ៍",
+    "hours_saturday_en": "8:30 AM - 11:30 AM",
+    "hours_saturday_km": "8:30 ព្រឹក - 11:30 ព្រឹក",
+    "hours_sunday_label_en": "Sunday",
+    "hours_sunday_label_km": "អាទិត្យ",
+    "hours_sunday_en": "Close",
+    "hours_sunday_km": "បិទ"
+  }
+}
