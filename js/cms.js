@@ -197,6 +197,7 @@
 
     /* -------------------------------------------------------------- events */
     function eventItem(event) {
+        var cta = text(event, 'cta');
         return [
             '<div class="col-12">',
             '  <article class="event-item overflow-hidden bg-white shadow-sm">',
@@ -211,7 +212,7 @@
             '      </div>',
             '      <h3 class="mb-2">' + esc(text(event, 'title')) + '</h3>',
             '      <p class="mb-3">' + esc(text(event, 'description')) + '</p>',
-            '      <a class="btn btn-primary py-2 px-4" href="' + esc(event.link) + '">' + esc(text(event, 'cta')) + '</a>',
+            cta ? '      <a class="btn btn-primary py-2 px-4" href="' + esc(event.link || 'booking.html') + '">' + esc(cta) + '</a>' : '',
             '    </div>',
             '  </article>',
             '</div>'
