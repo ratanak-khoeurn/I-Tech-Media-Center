@@ -1,6 +1,10 @@
 {
   "events": [
     {
+      "title_en": "Open Day & Free Trial Class",
+      "title_km": "ថ្ងៃបើកទ្វារ និងថ្នាក់សាកល្បងឥតគិតថ្លៃ",
+      "description_en": "Tour our facilities, meet the instructors and try a free class in graphic design or video editing.",
+      "description_km": "ទស្សនាបរិក្ខាររបស់យើង ជួបគ្រូបង្គោល និងសាកល្បងថ្នាក់ឥតគិតថ្លៃផ្នែករចនាក្រាហ្វិក ឬកាត់តវីដេអូ។",
       "day": "20",
       "month_en": "Nov 2026",
       "month_km": "វិច្ឆិកា 2026",
@@ -8,15 +12,15 @@
       "time_km": "9:00 ព្រឹក - 11:30 ព្រឹក",
       "location_en": "I-Tech Media Campus",
       "location_km": "បរិវេណ I-Tech Media",
-      "title_en": "Open Day & Free Trial Class",
-      "title_km": "ថ្ងៃបើកទ្វារ និងថ្នាក់សាកល្បងឥតគិតថ្លៃ",
-      "description_en": "Tour our facilities, meet the instructors and try a free class in graphic design or video editing.",
-      "description_km": "ទស្សនាបរិក្ខាររបស់យើង ជួបគ្រូបង្គោល និងសាកល្បងថ្នាក់ឥតគិតថ្លៃផ្នែករចនាក្រាហ្វិក ឬកាត់តវីដេអូ។",
       "cta_en": "Register",
       "cta_km": "ចុះឈ្មោះ",
       "link": "booking.html"
     },
     {
+      "title_en": "Pearson IT Certification Info Session",
+      "title_km": "សិក្ខាសាលាផ្តល់ព័ត៌មានវិញ្ញាបនបត្រ IT របស់ Pearson",
+      "description_en": "Learn about Microsoft and IT Specialist certification paths, exam preparation and study plans.",
+      "description_km": "ស្វែងយល់ពីផ្លូវវិញ្ញាបនបត្រ Microsoft និង IT Specialist ការរៀបចំសម្រាប់ការប្រឡង និងផែនការសិក្សា។",
       "day": "04",
       "month_en": "Dec 2026",
       "month_km": "ធ្នូ 2026",
@@ -24,15 +28,15 @@
       "time_km": "5:30 ល្ងាច - 7:00 ល្ងាច",
       "location_en": "I-Tech Media Campus",
       "location_km": "បរិវេណ I-Tech Media",
-      "title_en": "Pearson IT Certification Info Session",
-      "title_km": "សិក្ខាសាលាផ្តល់ព័ត៌មានវិញ្ញាបនបត្រ IT របស់ Pearson",
-      "description_en": "Learn about Microsoft and IT Specialist certification paths, exam preparation and study plans.",
-      "description_km": "ស្វែងយល់ពីផ្លូវវិញ្ញាបនបត្រ Microsoft និង IT Specialist ការរៀបចំសម្រាប់ការប្រឡង និងផែនការសិក្សា។",
       "cta_en": "Register",
       "cta_km": "ចុះឈ្មោះ",
       "link": "booking.html"
     },
     {
+      "title_en": "Creative Portfolio Workshop",
+      "title_km": "សិក្ខាសាលាផលប័ត្រការងារច្នៃប្រឌិត",
+      "description_en": "Build a portfolio with guidance from our design and video instructors.",
+      "description_km": "កសាងផលប័ត្រការងារ ដោយមានការណែនាំពីគ្រូរចនា និងគ្រូវីដេអូរបស់យើង។",
       "day": "12",
       "month_en": "Dec 2026",
       "month_km": "ធ្នូ 2026",
@@ -40,15 +44,15 @@
       "time_km": "8:30 ព្រឹក - 11:30 ព្រឹក",
       "location_en": "I-Tech Media Campus",
       "location_km": "បរិវេណ I-Tech Media",
-      "title_en": "Creative Portfolio Workshop",
-      "title_km": "សិក្ខាសាលាផលប័ត្រការងារច្នៃប្រឌិត",
-      "description_en": "Build a portfolio with guidance from our design and video instructors.",
-      "description_km": "កសាងផលប័ត្រការងារ ដោយមានការណែនាំពីគ្រូរចនា និងគ្រូវីដេអូរបស់យើង។",
       "cta_en": "Register",
       "cta_km": "ចុះឈ្មោះ",
       "link": "booking.html"
     },
     {
+      "title_en": "Weekend Career Talk: Digital Skills at Work",
+      "title_km": "ការពិភាក្សាអាជីពចុងសប្តាហ៍៖ ជំនាញឌីជីថលក្នុងការងារ",
+      "description_en": "Hear how digital media and IT skills are used in real workplaces, and what employers look for.",
+      "description_km": "ស្តាប់ពីរបៀបដែលជំនាញមេឌៀឌីជីថល និង IT ត្រូវបានប្រើក្នុងកន្លែងការងារពិត និងអ្វីដែលនិយោជកស្វែងរក។",
       "day": "09",
       "month_en": "Jan 2027",
       "month_km": "មករា 2027",
@@ -56,13 +60,22 @@
       "time_km": "9:00 ព្រឹក - 10:30 ព្រឹក",
       "location_en": "I-Tech Media Campus",
       "location_km": "បរិវេណ I-Tech Media",
-      "title_en": "Weekend Career Talk: Digital Skills at Work",
-      "title_km": "ការពិភាក្សាអាជីពចុងសប្តាហ៍៖ ជំនាញឌីជីថលក្នុងការងារ",
-      "description_en": "Hear how digital media and IT skills are used in real workplaces, and what employers look for.",
-      "description_km": "ស្តាប់ពីរបៀបដែលជំនាញមេឌៀឌីជីថល និង IT ត្រូវបានប្រើក្នុងកន្លែងការងារពិត និងអ្វីដែលនិយោជកស្វែងរក។",
       "cta_en": "Reserve a seat",
       "cta_km": "កក់កៅអី",
       "link": "booking.html"
+    },
+    {
+      "title_en": "Water Festival",
+      "title_km": "ពិធីបុណ្យអុំទូក",
+      "description_en": "The Water Festival is a national festival in Cambodia held to commemorate the survival through a brutal era (the Pol Pot regime).",
+      "description_km": "ពិធីបុណ្យអុំទូក គឺជាពិធីបុណ្យជាតិរបស់ប្រទេសកម្ពុជាដែលធ្វើឡើងដើម្បីរំលឹកដល់ការឆ្លងផុតសម័យដ៏ឃោរឃៅ(សម័យប៉ុលពត)។",
+      "day": "23, 24, 25",
+      "month_en": "Nov 2026",
+      "month_km": "វិច្ឆិកា",
+      "time_en": "6:00",
+      "time_km": "៦៖០០",
+      "location_en": "Phnom Penh",
+      "location_km": "ភ្នំពេញ"
     }
   ]
 }
