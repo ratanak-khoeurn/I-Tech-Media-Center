@@ -51,6 +51,27 @@
         <!-- Navbar & Hero End -->
 
 
+        <!-- Video Highlight Start -->
+        <section class="video-highlight" data-video-highlight>
+            <div class="video-highlight-media">
+                <img src="img/training-1.jpg" alt="Students learning in the I-Tech Media computer lab" data-setting-src="video_poster" data-setting-alt="video_poster_alt">
+                <span class="video-highlight-scrim"></span>
+            </div>
+            <div class="container video-highlight-inner">
+                <div class="video-highlight-copy">
+                    <h5 class="section-title ff-secondary text-start fw-normal mb-2" data-setting="video_eyebrow">Video Highlight</h5>
+                    <h2 class="text-white mb-3" data-setting="video_title">Inside I-Tech Media</h2>
+                    <p class="mb-0" data-setting="video_text">A short look inside our classrooms, computer labs and graduation days.</p>
+                </div>
+                <a class="video-highlight-play" href="img/video-highlight.mp4" target="_blank" rel="noopener" data-video-play>
+                    <span class="video-highlight-play-icon"><i class="fa fa-play" aria-hidden="true"></i></span>
+                    <span data-setting="video_cta">Watch the video</span>
+                </a>
+            </div>
+        </section>
+        <!-- Video Highlight End -->
+
+
         <!-- Gallery Start -->
         <div class="container-xxl py-5">
             <div class="container">
@@ -207,6 +228,21 @@
         <div id="site-footer"></div>
         <script src="js/footer.js"></script>
         <!-- Footer End -->
+    </div>
+
+    <!-- Video Highlight Modal -->
+    <div class="modal fade video-highlight-modal" id="videoHighlightModal" tabindex="-1" aria-labelledby="videoHighlightTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0 py-3">
+                    <h5 class="modal-title text-white" id="videoHighlightTitle" data-setting="video_title">Inside I-Tech Media</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9" data-video-frame></div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- JavaScript Libraries -->

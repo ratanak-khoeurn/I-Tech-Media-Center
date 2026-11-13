@@ -324,6 +324,11 @@
         'Main computer lab': 'មន្ទីរកុំព្យូទ័រចម្បង',
         'Want to join the next class?': 'ចង់ចូលរួមថ្នាក់បន្ទាប់ឬ?',
         "Visit our campus or enroll online — we'd love to meet you.": 'មកទស្សនាបរិវេណសាលារបស់យើង ឬចុះឈ្មោះតាមអនឡាញ — យើងរីករាយជួបអ្នក។',
+        'Video Highlight': 'វីដេអូពិសេស',
+        'Inside I-Tech Media': 'នៅក្នុង I-Tech Media',
+        'A short look inside our classrooms, computer labs and graduation days.': 'ទិដ្ឋភាពខ្លីៗនៅក្នុងថ្នាក់រៀន មន្ទីរកុំព្យូទ័រ និងថ្ងៃបញ្ចប់ការសិក្សារបស់យើង។',
+        'Watch the video': 'មើលវីដេអូ',
+        'Students learning in the I-Tech Media computer lab': 'សិស្សកំពុងរៀននៅមន្ទីរកុំព្យូទ័រ I-Tech Media',
 
         'Students in an I-Tech Media computer lab': 'សិស្សនៅក្នុងមន្ទីរកុំព្យូទ័ររបស់ I-Tech Media',
         'Graphic design training at I-Tech Media': 'ការបណ្តុះបណ្តាលរចនាក្រាហ្វិកនៅ I-Tech Media',

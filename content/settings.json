@@ -19,6 +19,18 @@
     "hours_sunday_label_en": "Sunday",
     "hours_sunday_label_km": "អាទិត្យ",
     "hours_sunday_en": "Close",
-    "hours_sunday_km": "បិទ"
+    "hours_sunday_km": "បិទ",
+    "video_url": "video-highlight.mp4",
+    "video_poster": "training-1.jpg",
+    "video_poster_alt_en": "Students learning in the I-Tech Media computer lab",
+    "video_poster_alt_km": "សិស្សកំពុងរៀននៅមន្ទីរកុំព្យូទ័រ I-Tech Media",
+    "video_eyebrow_en": "Video Highlight",
+    "video_eyebrow_km": "វីដេអូពិសេស",
+    "video_title_en": "Inside I-Tech Media",
+    "video_title_km": "នៅក្នុង I-Tech Media",
+    "video_text_en": "A short look inside our classrooms, computer labs and graduation days.",
+    "video_text_km": "ទិដ្ឋភាពខ្លីៗនៅក្នុងថ្នាក់រៀន មន្ទីរកុំព្យូទ័រ និងថ្ងៃបញ្ចប់ការសិក្សារបស់យើង។",
+    "video_cta_en": "Watch the video",
+    "video_cta_km": "មើលវីដេអូ"
   }
 }

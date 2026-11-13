@@ -80,6 +80,43 @@ content:
           - name: hours_sunday_km
             label: Sunday hours (Khmer)
             type: string
+          - name: video_url
+            label: Video highlight link
+            type: string
+            description: YouTube, Vimeo or direct .mp4 link. Leave empty to open the YouTube channel.
+          - name: video_poster
+            label: Video banner image
+            type: image
+          - name: video_poster_alt_en
+            label: Banner image description (English)
+            type: string
+          - name: video_poster_alt_km
+            label: Banner image description (Khmer)
+            type: string
+          - name: video_eyebrow_en
+            label: Banner label (English)
+            type: string
+          - name: video_eyebrow_km
+            label: Banner label (Khmer)
+            type: string
+          - name: video_title_en
+            label: Banner title (English)
+            type: string
+          - name: video_title_km
+            label: Banner title (Khmer)
+            type: string
+          - name: video_text_en
+            label: Banner text (English)
+            type: text
+          - name: video_text_km
+            label: Banner text (Khmer)
+            type: text
+          - name: video_cta_en
+            label: Play button label (English)
+            type: string
+          - name: video_cta_km
+            label: Play button label (Khmer)
+            type: string
 
   # ----------------------------------------------------------------- courses
   - name: courses

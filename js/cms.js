@@ -275,11 +275,15 @@
     }
 
     /* ------------------------------------------------------------- settings */
+    function settingValue(site, key) {
+        var value = site[key + '_' + lang] || site[key + '_en'] || site[key];
+        return value == null ? '' : value;
+    }
+
     function renderSettings(site) {
         if (!site) return;
         document.querySelectorAll('[data-setting]').forEach(function (el) {
-            var key = el.getAttribute('data-setting');
-            var value = site[key + '_' + lang] || site[key + '_en'] || site[key];
+            var value = settingValue(site, el.getAttribute('data-setting'));
             if (value) el.textContent = value;
         });
         document.querySelectorAll('[data-setting-href]').forEach(function (el) {
@@ -287,11 +291,66 @@
             var value = site[key];
             if (value) el.setAttribute('href', key === 'email' ? 'mailto:' + value : value);
         });
+        document.querySelectorAll('[data-setting-src]').forEach(function (el) {
+            var value = settingValue(site, el.getAttribute('data-setting-src'));
+            if (value) el.setAttribute('src', media(value));
+        });
+        document.querySelectorAll('[data-setting-alt]').forEach(function (el) {
+            var value = settingValue(site, el.getAttribute('data-setting-alt'));
+            if (value) el.setAttribute('alt', value);
+        });
+    }
+
+    /* --------------------------------------------------------------- video */
+    function videoSource(url) {
+        var value = String(url || '').trim();
+        if (!value) return null;
+        var youtube = value.match(/(?:youtube\.com\/(?:watch\?(?:.*&)?v=|embed\/|shorts\/|live\/)|youtu\.be\/)([A-Za-z0-9_-]{11})/);
+        if (youtube) return { type: 'iframe', src: 'https://www.youtube.com/embed/' + youtube[1] + '?autoplay=1&rel=0' };
+        var vimeo = value.match(/vimeo\.com\/(?:video\/)?(\d+)/);
+        if (vimeo) return { type: 'iframe', src: 'https://player.vimeo.com/video/' + vimeo[1] + '?autoplay=1' };
+        if (/\.(mp4|webm|ogg)(\?.*)?$/i.test(value)) return { type: 'video', src: media(value) };
+        return null;
+    }
+
+    function renderVideo(site) {
+        if (!site) return;
+        var banner = document.querySelector('[data-video-highlight]');
+        var trigger = banner && banner.querySelector('[data-video-play]');
+        if (!trigger || banner.getAttribute('data-video-ready') === '1') return;
+        banner.setAttribute('data-video-ready', '1');
+
+        var modalEl = document.getElementById('videoHighlightModal');
+        var frame = modalEl && modalEl.querySelector('[data-video-frame]');
+
+        trigger.addEventListener('click', function (event) {
+            event.preventDefault();
+            var source = videoSource(site.video_url);
+            if (!source) {
+                window.open(site.youtube_url || SOCIAL.youtube_url, '_blank', 'noopener');
+                return;
+            }
+            if (!modalEl || !frame || typeof bootstrap === 'undefined') {
+                window.open(source.src, '_blank', 'noopener');
+                return;
+            }
+            frame.innerHTML = source.type === 'video'
+                ? '<video src="' + esc(source.src) + '" controls autoplay playsinline></video>'
+                : '<iframe src="' + esc(source.src) + '" title="' + esc(settingValue(site, 'video_title')) + '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+            (bootstrap.Modal.getInstance(modalEl) || new bootstrap.Modal(modalEl)).show();
+        });
+
+        if (modalEl && frame) {
+            modalEl.addEventListener('hidden.bs.modal', function () {
+                frame.innerHTML = '';
+            });
+        }
     }
 
     /* ------------------------------------------------------------- pipeline */
     function renderAll() {
         if (cache.settings) renderSettings(cache.settings.site);
+        if (cache.settings) renderVideo(cache.settings.site);
         if (cache.courses) renderCourses(cache.courses.courses || []);
         if (cache.news) renderNews(cache.news.news || []);
         if (cache.events) renderEvents(cache.events.events || []);
