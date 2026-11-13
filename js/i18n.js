@@ -331,6 +331,7 @@
         'Inside I-Tech Media': 'នៅក្នុង I-Tech Media',
         'A short look inside our classrooms, computer labs and graduation days.': 'ទិដ្ឋភាពខ្លីៗនៅក្នុងថ្នាក់រៀន មន្ទីរកុំព្យូទ័រ និងថ្ងៃបញ្ចប់ការសិក្សារបស់យើង។',
         'Watch the video': 'មើលវីដេអូ',
+        'Photography Class Highlight': 'វីដេអូសង្ខេបថ្នាក់ថតរូប',
         'Students learning in the I-Tech Media computer lab': 'សិស្សកំពុងរៀននៅមន្ទីរកុំព្យូទ័រ I-Tech Media',
 
         'Students in an I-Tech Media computer lab': 'សិស្សនៅក្នុងមន្ទីរកុំព្យូទ័ររបស់ I-Tech Media',

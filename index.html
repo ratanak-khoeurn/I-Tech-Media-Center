@@ -557,7 +557,10 @@
             <div class="row g-0">
                 <div class="col-md-6">
                     <div class="video">
-                        <a href="https://www.youtube.com/@i-techmedia_school" target="_blank" rel="noopener" class="btn-play" aria-label="Watch I-Tech Media videos on YouTube">
+                        <video class="video-bg" autoplay muted loop playsinline preload="metadata" poster="img/photography-highlight-poster.jpg" aria-hidden="true">
+                            <source src="img/photography-highlight.mp4" type="video/mp4">
+                        </video>
+                        <a href="img/photography-highlight.mp4" class="btn-play" data-home-video aria-label="Play the photography class highlight video">
                             <span></span>
                         </a>
                     </div>
@@ -566,29 +569,30 @@
                     <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
                         <h5 class="section-title ff-secondary text-start text-primary fw-normal">Enrollment</h5>
                         <h1 class="text-white mb-4">Enroll Online</h1>
-                        <form>
+                        <form id="enroll-form">
                             <div class="row g-3">
+                                <input type="text" class="contact-honey" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Full Name">
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" required>
                                         <label for="name">Full Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
                                         <label for="email">Your Email</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="date" class="form-control" id="startdate" placeholder="Preferred Start Date">
+                                        <input type="date" class="form-control" id="startdate" name="startdate" placeholder="Preferred Start Date">
                                         <label for="startdate">Preferred Start Date</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <select class="form-select" id="course" data-cms="course-options">
+                                        <select class="form-select" id="course" name="course" data-cms="course-options" required>
                                             <option selected disabled>Select a course</option>
                                             <option>Computer Office Course</option>
                                             <option>Robotics Course</option>
@@ -605,12 +609,13 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Questions or special request" id="message" style="height: 100px"></textarea>
+                                        <textarea class="form-control" placeholder="Questions or special request" id="message" name="message" style="height: 100px"></textarea>
                                         <label for="message">Questions / Special Request</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="submit">Submit Application</button>
+                                    <div class="enroll-form-status" id="enroll-form-status" role="status" aria-live="polite"></div>
                                 </div>
                             </div>
                         </form>
@@ -628,60 +633,8 @@
 
 
         <!-- Testimonial Start -->
-        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container">
-                <div class="text-center">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Testimonials</h5>
-                    <h1 class="mb-5">What Our Students Say</h1>
-                </div>
-                <div class="owl-carousel testimonial-carousel">
-                    <div class="testimonial-item bg-transparent border rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>The graphic design course was hands-on from day one. I built a portfolio I could actually show to clients.</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" alt="Graphic Design Graduate" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">Graphic Design Graduate</h5>
-                                <small>Now a junior designer</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>The instructors explained everything step by step. I now edit videos confidently for my own business.</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" alt="Video Editing Student" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">Video Editing Student</h5>
-                                <small>Freelance video editor</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Studying for the Pearson certification at I-Tech Media helped me understand the IT field and prepare for a real job.</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" alt="IT Certification Student" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">IT Certification Student</h5>
-                                <small>Pearson IT Specialist</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item bg-transparent border rounded p-4">
-                        <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Flexible class times let me study while working. The 3D animation class was the best part of my week.</p>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" alt="3D Animation Student" style="width: 50px; height: 50px;">
-                            <div class="ps-3">
-                                <h5 class="mb-1">3D Animation Student</h5>
-                                <small>Creative media student</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <div id="site-testimonials"></div>
+        <script src="js/testimonials.js"></script>
         <!-- Testimonial End -->
 
 
@@ -692,6 +645,21 @@
 
 
 </div>
+
+    <!-- Video Modal -->
+    <div class="modal fade" id="homeVideoModal" tabindex="-1" aria-labelledby="homeVideoTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-dark">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-white" id="homeVideoTitle">Photography Class Highlight</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9" data-home-video-frame></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -708,6 +676,8 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/i18n.js"></script>
+    <script src="js/enroll.js"></script>
+    <script src="js/home-video.js"></script>
     <script src="js/chatbot.js"></script>
     <script src="js/cms.js"></script>
 </body>

@@ -1,4 +1,10 @@
 (function () {
+    var background = document.querySelector('[data-video-bg]');
+    if (background && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        background.removeAttribute('autoplay');
+        background.pause();
+    }
+
     var current = 'all';
 
     function filter(category) {

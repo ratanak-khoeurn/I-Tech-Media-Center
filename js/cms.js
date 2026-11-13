@@ -332,6 +332,25 @@
     function renderVideo(site) {
         if (!site) return;
         var banner = document.querySelector('[data-video-highlight]');
+        var background = banner && banner.querySelector('[data-video-bg]');
+        if (background) {
+            var bgSource = videoSource(site.video_url);
+            var mediaBox = banner.querySelector('.video-highlight-media');
+            if (bgSource && bgSource.type === 'video') {
+                var poster = settingValue(site, 'video_poster');
+                if (poster) background.setAttribute('poster', media(poster));
+                if (background.getAttribute('src') !== bgSource.src) background.setAttribute('src', bgSource.src);
+            } else {
+                background.remove();
+                var fallback = settingValue(site, 'video_poster');
+                if (mediaBox && fallback && !mediaBox.querySelector('img')) {
+                    var img = document.createElement('img');
+                    img.src = media(fallback);
+                    img.alt = settingValue(site, 'video_poster_alt');
+                    mediaBox.insertBefore(img, mediaBox.firstChild);
+                }
+            }
+        }
         var trigger = banner && banner.querySelector('[data-video-play]');
         if (!trigger || banner.getAttribute('data-video-ready') === '1') return;
         banner.setAttribute('data-video-ready', '1');

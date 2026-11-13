@@ -1128,10 +1128,18 @@ html {
     position: relative;
     height: 100%;
     min-height: 500px;
-    background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(../img/campus.jpg);
+    background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)), url(../img/photography-highlight-poster.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.video .video-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .video .btn-play {
@@ -2171,11 +2179,16 @@ html[lang="km"] .event-month {
     inset: 0;
 }
 
-.video-highlight-media img {
+.video-highlight-media img,
+.video-highlight-media video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+.video-highlight-media video {
+    display: block;
 }
 
 .video-highlight-scrim {
@@ -2572,6 +2585,37 @@ html[lang="km"] .contact-form-hint {
 }
 
 html[lang="km"] .contact-form-status {
+    line-height: 1.7;
+}
+
+.enroll-form-status {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #D1D5DB;
+}
+
+.enroll-form-status:empty {
+    display: none;
+}
+
+.enroll-form-status.is-success {
+    color: #6EE7B7;
+    font-weight: 600;
+}
+
+.enroll-form-status.is-error {
+    color: #FCA5A5;
+    font-weight: 600;
+}
+
+.enroll-form-status a {
+    color: inherit;
+    font-weight: 600;
+    word-break: break-word;
+}
+
+html[lang="km"] .enroll-form-status {
     line-height: 1.7;
 }
 
