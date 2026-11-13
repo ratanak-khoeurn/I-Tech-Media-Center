@@ -51,6 +51,7 @@
         };
         var name = value('name');
         var email = value('email');
+        var phone = value('phone');
         var startdate = value('startdate');
         var course = value('course');
         var message = value('message');
@@ -59,6 +60,7 @@
         var payload = {
             name: name,
             email: email,
+            phone: phone,
             start_date: startdate,
             course: course,
             message: message,

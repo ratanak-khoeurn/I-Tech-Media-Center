@@ -557,12 +557,18 @@
             <div class="row g-0">
                 <div class="col-md-6">
                     <div class="video">
-                        <video class="video-bg" autoplay muted loop playsinline preload="metadata" poster="img/photography-highlight-poster.jpg" aria-hidden="true">
+                        <video class="video-bg" data-video-bg autoplay muted loop playsinline preload="metadata" poster="img/photography-highlight-poster.jpg" aria-hidden="true">
                             <source src="img/photography-highlight.mp4" type="video/mp4">
                         </video>
                         <a href="img/photography-highlight.mp4" class="btn-play" data-home-video aria-label="Play the photography class highlight video">
                             <span></span>
                         </a>
+                        <button class="video-sound" type="button" data-video-sound aria-pressed="false">
+                            <i class="fa fa-volume-mute" aria-hidden="true"></i>
+                            <i class="fa fa-volume-up" aria-hidden="true"></i>
+                            <span class="visually-hidden" data-sound-label-on>Turn on sound</span>
+                            <span class="visually-hidden" data-sound-label-off>Turn off sound</span>
+                        </button>
                     </div>
                 </div>
                 <div class="col-md-6 bg-dark d-flex align-items-center">
@@ -582,6 +588,12 @@
                                     <div class="form-floating">
                                         <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
                                         <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number" autocomplete="tel" required>
+                                        <label for="phone">Phone Number</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -678,6 +690,7 @@
     <script src="js/i18n.js"></script>
     <script src="js/enroll.js"></script>
     <script src="js/home-video.js"></script>
+    <script src="js/video-sound.js"></script>
     <script src="js/chatbot.js"></script>
     <script src="js/cms.js"></script>
 </body>

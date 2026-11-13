@@ -1,10 +1,4 @@
 (function () {
-    var background = document.querySelector('.video-bg');
-    if (background && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        background.removeAttribute('autoplay');
-        background.pause();
-    }
-
     var trigger = document.querySelector('[data-home-video]');
     var modalEl = document.getElementById('homeVideoModal');
     if (!trigger || !modalEl || typeof bootstrap === 'undefined') return;

@@ -342,6 +342,8 @@
                 if (background.getAttribute('src') !== bgSource.src) background.setAttribute('src', bgSource.src);
             } else {
                 background.remove();
+                var soundBtn = banner.querySelector('[data-video-sound]');
+                if (soundBtn) soundBtn.remove();
                 var fallback = settingValue(site, 'video_poster');
                 if (mediaBox && fallback && !mediaBox.querySelector('img')) {
                     var img = document.createElement('img');
