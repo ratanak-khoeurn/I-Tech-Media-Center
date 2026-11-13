@@ -318,8 +318,8 @@
     background:
         linear-gradient(
             120deg,
-            rgba(9, 36, 65, .97),
-            rgba(9, 64, 98, .90)
+            #1c8aca,
+            rgba(10, 79, 121, 0.723)
         ),
         url("../img/bg-header.png") center center / cover no-repeat;
 
