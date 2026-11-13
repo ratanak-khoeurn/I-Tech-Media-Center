@@ -14,7 +14,8 @@
             enroll: 'Enroll Now',
             programs: 'Programs',
             certifications: 'Certifications',
-            selectCourse: 'Select a course'
+            selectCourse: 'Select a course',
+            otherCourse: 'Other / Not sure'
         },
         km: {
             duration: 'រយៈពេល',
@@ -23,7 +24,8 @@
             enroll: 'ចុះឈ្មោះឥឡូវ',
             programs: 'កម្មវិធី',
             certifications: 'វិញ្ញាបនបត្រ',
-            selectCourse: 'ជ្រើសរើសវគ្គសិក្សា'
+            selectCourse: 'ជ្រើសរើសវគ្គសិក្សា',
+            otherCourse: 'ផ្សេងៗ / មិនប្រាកដ'
         }
     };
 
@@ -117,6 +119,26 @@
         ].join('\n');
     }
 
+    function fillCourseOptions(list) {
+        var selects = document.querySelectorAll('[data-cms="course-options"], [data-cms="contact-course"]');
+        for (var i = 0; i < selects.length; i++) {
+            var select = selects[i];
+            var selected = select.value;
+            var options = list.map(function (course) {
+                var title = text(course, 'title');
+                var value = course.title_en || title;
+                return '<option value="' + esc(value) + '">' + esc(title) + '</option>';
+            }).join('');
+            if (select.hasAttribute('data-course-other')) {
+                options += '<option value="' + esc(LABELS.en.otherCourse) + '">' + esc(LABELS[lang].otherCourse) + '</option>';
+            }
+            select.innerHTML = '<option value="" selected disabled>' + esc(LABELS[lang].selectCourse) + '</option>' + options;
+            select.selectedIndex = -1;
+            if (selected) select.value = selected;
+            if (select.selectedIndex === -1) select.selectedIndex = 0;
+        }
+    }
+
     function renderCourses(list) {
         var groups = { local: [], international: [] };
         list.forEach(function (course) {
@@ -134,13 +156,7 @@
             if (el) el.textContent = entry[1] + ' ' + LABELS[lang][entry[2]];
         });
 
-        var select = mount('course-options');
-        if (select) {
-            var options = list.map(function (course) {
-                return '<option>' + esc(text(course, 'title')) + '</option>';
-            }).join('');
-            select.innerHTML = '<option selected disabled>' + esc(LABELS[lang].selectCourse) + '</option>' + options;
-        }
+        fillCourseOptions(list);
     }
 
     /* ---------------------------------------------------------------- news */
@@ -362,7 +378,7 @@
 
     function needed(name) {
         if (name === 'settings') return true;
-        if (name === 'courses') return !!(mount('courses-local') || mount('courses-intl') || mount('course-options'));
+        if (name === 'courses') return !!(mount('courses-local') || mount('courses-intl') || mount('course-options') || mount('contact-course'));
         return !!mount(name);
     }
 

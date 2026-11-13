@@ -17,7 +17,7 @@
         en: {
             general: 'General Enquiry',
             hr: 'HR & Recruitment',
-            subject: 'Website contact',
+            course: 'Course enquiry',
             send: 'Send Message',
             sending: 'Sending your message...',
             success: 'Thank you! Your message has been received. We will reply to your email soon.',
@@ -26,7 +26,7 @@
         km: {
             general: 'ការសាកសួរទូទៅ',
             hr: 'ធនធានមនុស្ស និងការជ្រើសរើសបុគ្គលិក',
-            subject: 'ទំនាក់ទំនងតាមគេហទំព័រ',
+            course: 'សំណួរអំពីវគ្គសិក្សា',
             send: 'ផ្ញើសារ',
             sending: 'កំពុងផ្ញើសាររបស់អ្នក...',
             success: 'សូមអរគុណ! សាររបស់អ្នកត្រូវបានទទួលរួចហើយ។ យើងនឹងឆ្លើយតបតាមអ៊ីមែលរបស់អ្នកឆាប់ៗនេះ។',
@@ -68,7 +68,8 @@
         var target = departments[key];
         var name = value('name');
         var email = value('email');
-        var subject = value('subject');
+        var phone = value('phone');
+        var course = value('course');
         var message = value('message');
         var honey = document.querySelector('input[name="_honey"]');
         var recovery = [target.to, target.cc].filter(Boolean).join(', ');
@@ -76,10 +77,11 @@
         var payload = {
             name: name,
             email: email,
+            phone: phone,
             department: labels[key],
-            subject: subject,
+            course: course,
             message: message,
-            _subject: '[' + labels[key] + '] ' + (subject || labels.subject),
+            _subject: '[' + labels[key] + '] ' + (course || labels.course),
             _replyto: email,
             _template: 'table',
             _captcha: 'false',
@@ -114,10 +116,15 @@
             .then(function (data) {
                 var sent = data && (data.success === true || data.success === 'true');
                 var needsActivation = data && /activat/i.test(data.message || '');
-                if (sent || needsActivation) {
+                if (sent) {
                     showStatus('success', labels.success);
                     form.reset();
                 } else {
+                    if (needsActivation) {
+                        console.warn('[contact] FormSubmit endpoint is not activated yet. Open the recipient inbox and click the "Activate Form" link from FormSubmit, then submit again.', target.to);
+                    } else {
+                        console.warn('[contact] FormSubmit rejected the submission:', data);
+                    }
                     showStatus('error', labels.error, recovery);
                 }
             })
