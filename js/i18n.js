@@ -333,6 +333,7 @@
         'Watch the video': 'មើលវីដេអូ',
         'Turn on sound': 'បើកសំឡេង',
         'Turn off sound': 'បិទសំឡេង',
+        'View profile': 'មើលប្រវត្តិរូប',
         'Photography Class Highlight': 'វីដេអូសង្ខេបថ្នាក់ថតរូប',
         'Students learning in the I-Tech Media computer lab': 'សិស្សកំពុងរៀននៅមន្ទីរកុំព្យូទ័រ I-Tech Media',
 

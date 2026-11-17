@@ -370,6 +370,14 @@ content:
         type: object
         list: true
         fields:
+          - name: name_en
+            label: Name (English)
+            type: string
+            required: true
+            description: Shown on the card and in the profile popup
+          - name: name_km
+            label: Name (Khmer)
+            type: string
           - name: role_en
             label: Role (English)
             type: string
@@ -385,6 +393,13 @@ content:
           - name: subject_km
             label: Subject (Khmer)
             type: string
+          - name: bio_en
+            label: Profile text (English)
+            type: text
+            description: Short paragraph shown when the card is clicked
+          - name: bio_km
+            label: Profile text (Khmer)
+            type: text
           - name: photo
             label: Photo
             type: image

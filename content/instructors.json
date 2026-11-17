@@ -2,39 +2,55 @@
   "instructors": [
     {
       "photo": "vannak.png",
+      "name_en": "Vannak",
+      "name_km": "វណ្ណៈ",
       "role_en": "Design Instructor",
       "role_km": "គ្រូបង្គោលរចនា",
       "subject_en": "Graphic Design",
       "subject_km": "រចនាក្រាហ្វិក",
-      "alt_en": "Design Instructor",
-      "alt_km": "គ្រូបង្គោលរចនា"
+      "bio_en": "Teaches graphic design from the ground up: Photoshop and Illustrator for visual concepts, plus InDesign for print-ready layouts and portfolio projects.",
+      "bio_km": "បង្រៀនរចនាក្រាហ្វិកចាប់ពីមូលដ្ឋាន៖ Photoshop និង Illustrator សម្រាប់គំនិតច្នៃប្រឌិត ព្រមទាំង InDesign សម្រាប់ការរៀបចំទំព័របោះពុម្ព និងគម្រោង Portfolio។",
+      "alt_en": "Vannak, Design Instructor",
+      "alt_km": "វណ្ណៈ គ្រូបង្គោលរចនា"
     },
     {
       "photo": "reaksmey.png",
+      "name_en": "Reaksmey",
+      "name_km": "រស្មី",
       "role_en": "Microsoft Office Instructor",
       "role_km": "គ្រូបង្គោល Microsoft Office",
       "subject_en": "MS Office",
       "subject_km": "MS Office",
-      "alt_en": "Microsoft Office Instructor",
-      "alt_km": "គ្រូបង្គោល Microsoft Office"
+      "bio_en": "Trains students in Microsoft Word, Excel and PowerPoint, with practical exercises for office documents, spreadsheets and presentations.",
+      "bio_km": "បណ្តុះបណ្តាលសិស្សលើ Microsoft Word, Excel និង PowerPoint ជាមួយលំហាត់អនុវត្តជាក់ស្តែង សម្រាប់ឯកសារការិយាល័យ តារាង និងបទបង្ហាញ។",
+      "alt_en": "Reaksmey, Microsoft Office Instructor",
+      "alt_km": "រស្មី គ្រូបង្គោល Microsoft Office"
     },
     {
       "photo": "vibol.jpg",
+      "name_en": "Vibol",
+      "name_km": "វិបុល",
       "role_en": "Microsoft Office Instructor",
       "role_km": "គ្រូបង្គោល Microsoft Office",
       "subject_en": "MS Office",
       "subject_km": "MS Office",
-      "alt_en": "Microsoft Office Instructor",
-      "alt_km": "គ្រូបង្គោល Microsoft Office"
+      "bio_en": "Teaches Microsoft Office with a focus on Excel formulas, data organization and clear, professional presentations for school and work.",
+      "bio_km": "បង្រៀន Microsoft Office ដោយផ្តោតលើរូបមន្ត Excel ការរៀបចំទិន្នន័យ និងបទបង្ហាញវិជ្ជាជីវៈ សម្រាប់ការសិក្សា និងការងារ។",
+      "alt_en": "Vibol, Microsoft Office Instructor",
+      "alt_km": "វិបុល គ្រូបង្គោល Microsoft Office"
     },
     {
       "photo": "socheat.png",
+      "name_en": "Socheat",
+      "name_km": "សុជាតិ",
       "role_en": "Photo & Video Instructor",
       "role_km": "គ្រូបង្គោលរូបថត និងវីដេអូ",
       "subject_en": "Photography & Videography",
       "subject_km": "ការថតរូប និងថតវីដេអូ",
-      "alt_en": "Photo & Video Instructor",
-      "alt_km": "គ្រូបង្គោលរូបថត និងវីដេអូ"
+      "bio_en": "Guides students through camera basics, studio and outdoor shoots, lighting and video storytelling, then editing their own photo and video projects.",
+      "bio_km": "ណែនាំសិស្សពីមូលដ្ឋានកាមេរ៉ា ការថតក្នុងស្ទូឌីយោ និងខាងក្រៅ ការបំភ្លឺ និងការនិទានរឿងតាមវីដេអូ រួចកាត់តគម្រោងរូបថត និងវីដេអូផ្ទាល់ខ្លួន។",
+      "alt_en": "Socheat, Photo & Video Instructor",
+      "alt_km": "សុជាតិ គ្រូបង្គោលរូបថត និងវីដេអូ"
     }
   ]
 }

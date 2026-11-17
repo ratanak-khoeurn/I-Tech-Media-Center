@@ -15,7 +15,8 @@
             programs: 'Programs',
             certifications: 'Certifications',
             selectCourse: 'Select a course',
-            otherCourse: 'Other / Not sure'
+            otherCourse: 'Other / Not sure',
+            viewProfile: 'View profile'
         },
         km: {
             duration: 'រយៈពេល',
@@ -25,7 +26,8 @@
             programs: 'កម្មវិធី',
             certifications: 'វិញ្ញាបនបត្រ',
             selectCourse: 'ជ្រើសរើសវគ្គសិក្សា',
-            otherCourse: 'ផ្សេងៗ / មិនប្រាកដ'
+            otherCourse: 'ផ្សេងៗ / មិនប្រាកដ',
+            viewProfile: 'មើលប្រវត្តិរូប'
         }
     };
 
@@ -261,27 +263,28 @@
     /* ---------------------------------------------------------- instructors */
     function instructorCard(person) {
         var site = cache.settings || SOCIAL;
-        var socials = [
-            ['facebook_url', 'fab fa-facebook-f', 'Facebook'],
-            ['linkedin_url', 'fab fa-linkedin-in', 'LinkedIn'],
-            ['youtube_url', 'fab fa-youtube', 'YouTube']
-        ].map(function (entry) {
-            var href = site[entry[0]] || SOCIAL[entry[0]];
-            return '        <a class="btn btn-square btn-primary mx-1" href="' + esc(href) + '" target="_blank" rel="noopener" aria-label="' + entry[2] + '"><i class="' + entry[1] + '"></i></a>';
-        }).join('\n');
+        var name = text(person, 'name');
+        var role = text(person, 'role');
+        var subject = text(person, 'subject');
+        var bio = text(person, 'bio');
+        var photo = media(person.photo);
 
         return [
             '<div class="col-lg-3 col-md-6">',
-            '  <div class="team-item text-center overflow-hidden">',
-            '    <div class="rounded-circle overflow-hidden m-4">',
-            '      <img class="img-fluid" src="' + esc(media(person.photo)) + '" alt="' + esc(text(person, 'alt') || text(person, 'role')) + '">',
+            '  <article class="team-item text-center" role="button" tabindex="0" aria-haspopup="dialog" data-instructor',
+            '    data-name="' + esc(name) + '" data-role="' + esc(role) + '" data-subject="' + esc(subject) + '"',
+            '    data-photo="' + esc(photo) + '" data-bio="' + esc(bio) + '"',
+            '    data-facebook="' + esc(site.facebook_url || SOCIAL.facebook_url) + '"',
+            '    data-linkedin="' + esc(site.linkedin_url || SOCIAL.linkedin_url) + '"',
+            '    data-youtube="' + esc(site.youtube_url || SOCIAL.youtube_url) + '">',
+            '    <div class="team-photo">',
+            '      <img class="img-fluid" src="' + esc(photo) + '" alt="' + esc(text(person, 'alt') || name || role) + '" loading="lazy">',
             '    </div>',
-            '    <h5 class="mb-0">' + esc(text(person, 'role')) + '</h5>',
-            '    <small>' + esc(text(person, 'subject')) + '</small>',
-            '    <div class="d-flex justify-content-center mt-3">',
-            socials,
-            '    </div>',
-            '  </div>',
+            '    <h5 class="team-name mb-1">' + esc(name || role) + '</h5>',
+            '    <span class="team-role">' + esc(role) + '</span>',
+            '    <span class="team-subject">' + esc(subject) + '</span>',
+            '    <span class="team-more">' + esc(LABELS[lang].viewProfile) + ' <i class="fa fa-arrow-right" aria-hidden="true"></i></span>',
+            '  </article>',
             '</div>'
         ].join('\n');
     }

@@ -4,8 +4,8 @@
     --accent: #F9A01F;
     --primary-dark: #1B6FA6;
     --accent-dark: #E08C12;
-    --light: #F1F8FF;
-    --dark: #0F172B;
+    --light: #161718;
+    --dark: hsl(0, 100%, 98%);
     --page-gutter: clamp(1.5rem, 4vw, 3rem);
     --section-y: 4rem;
 }
@@ -304,6 +304,10 @@ html {
     .navbar-dark .btn-primary {
         margin-top: 12px;
         margin-bottom: 10px;
+    }
+
+    .sticky-top.navbar-dark {
+        position: relative;
     }
 }
 
