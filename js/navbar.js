@@ -55,7 +55,18 @@
     ].join('\n');
 
     var mount = document.getElementById('site-navbar');
-    if (mount) {
-        mount.outerHTML = html;
+    if (!mount) return;
+
+    mount.outerHTML = html;
+
+    // A sticky element only sticks while its parent is in view. The placeholder
+    // sits in a wrapper that ends after the hero, so promote the navbar to the
+    // page wrapper so it can stay pinned for the whole page.
+    var nav = document.querySelector('.navbar');
+    if (nav && nav.parentNode && nav.parentNode.parentNode) {
+        var shell = nav.parentNode.parentNode;
+        if (shell.firstElementChild !== nav) {
+            shell.insertBefore(nav, shell.firstElementChild);
+        }
     }
 })();

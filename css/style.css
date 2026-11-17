@@ -158,9 +158,10 @@ html {
 
 /*** Navbar ***/
 .navbar-dark {
-    position: relative;
+    position: sticky;
+    top: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 1030;
     background: var(--dark) !important;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -216,7 +217,7 @@ html {
 
 .brand-logo {
     width: auto;
-    height: 55px;
+    height: 80px;
     max-width: 190px;
     object-fit: contain;
     display: block;
@@ -254,25 +255,15 @@ html {
     box-shadow: none;
 }
 
-/* Sticky Navbar */
-.sticky-top.navbar-dark {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: var(--dark) !important;
-    box-shadow: 0 3px 15px rgba(0,0,0,.15);
-}
-
-.sticky-top.navbar-dark .brand-logo {
-    height: 45px;
+/* Scrolled navbar: shadow only, size stays the same */
+.navbar-dark.shadow-sm {
+    box-shadow: 0 3px 15px rgba(0,0,0,.15) !important;
 }
 
 /* Mobile Responsive */
 @media (max-width: 991.98px) {
 
     .navbar-dark {
-        position: relative;
         padding: 12px 15px;
     }
 
@@ -280,6 +271,8 @@ html {
         margin-top: 15px;
         padding-top: 10px;
         border-top: 1px solid rgba(255,255,255,.15);
+        max-height: calc(100vh - 90px);
+        overflow-y: auto;
     }
 
     .navbar-dark .navbar-nav .nav-link {
@@ -311,10 +304,6 @@ html {
     .navbar-dark .btn-primary {
         margin-top: 12px;
         margin-bottom: 10px;
-    }
-
-    .sticky-top.navbar-dark {
-        position: relative;
     }
 }
 
