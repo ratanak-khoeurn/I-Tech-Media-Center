@@ -1,18 +1,12 @@
 (function () {
-    // GA4 Measurement ID: Analytics Admin > Data Streams > your web stream.
-    // Until this is replaced with a real ID, analytics stays off.
-    var GA_MEASUREMENT_ID = "G-SDWS7SLCY1";
-
-    if (!/^G-[A-Z0-9]{8,}$/.test(GA_MEASUREMENT_ID) || GA_MEASUREMENT_ID === 'G-SDWS7SLCY1') return;
-    if (location.protocol === 'file:') return;
+    // Google Tag Manager container. GA4 tags are configured inside Tag Manager.
+    var GTM_ID = 'GTM-MGD9HKSX';
 
     window.dataLayer = window.dataLayer || [];
-    window.gtag = function () { window.dataLayer.push(arguments); };
-    gtag('js', new Date());
-    gtag('config', GA_MEASUREMENT_ID);
+    window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
 
     var script = document.createElement('script');
     script.async = true;
-    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_MEASUREMENT_ID;
+    script.src = 'https://www.googletagmanager.com/gtm.js?id=' + GTM_ID;
     document.head.appendChild(script);
 })();
