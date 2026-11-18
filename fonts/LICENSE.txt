@@ -1,0 +1,16 @@
+Khmer OS Battambang
+===================
+
+Font files in this folder:
+  KhmerOSBattambang-Regular.ttf
+  KhmerOSBattambang-Bold.ttf
+
+Copyright (c) 2007 Danh Hong / Khmer Software Initiative.
+Released under the GNU Lesser General Public License (LGPL), version 2.1
+or later, with the standard font embedding exception, which permits
+redistribution and embedding in documents and web pages.
+
+License text: https://www.gnu.org/licenses/lgpl-2.1.html
+Project:     http://www.khmeros.info/
+
+These files are served to the browser through @font-face in css/style.css.

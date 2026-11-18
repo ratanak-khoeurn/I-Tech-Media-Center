@@ -12,7 +12,7 @@
     }
 
     var html = [
-        '<nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">',
+        '<nav class="navbar navbar-expand-lg navbar-dark bg-dark">',
         '    <a href="index.html" class="navbar-brand p-0">',
         '        <div class="brand-logos d-flex justify-content-center align-items-center">',
         '            <img src="img/itech-logo.png" alt="I-Tech Media" class="brand-logo itech-logo">',
