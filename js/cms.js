@@ -241,6 +241,35 @@
         fill(mount('events'), list.map(eventItem).join(''), '.event-visit');
     }
 
+    /* ---------------------------------------------------------- promotions */
+    function promotionCard(slide) {
+        var cta = text(slide, 'cta');
+        var secondary = text(slide, 'secondary');
+        return [
+            '<div class="col-lg-6">',
+            '  <article class="promotion-card h-100">',
+            '    <div class="promotion-media">',
+            '      <img src="' + esc(media(slide.image)) + '" alt="' + esc(text(slide, 'image_alt') || text(slide, 'title')) + '" loading="lazy">',
+            '    </div>',
+            '    <div class="promotion-body">',
+            '      <span class="promotion-eyebrow">' + esc(text(slide, 'eyebrow')) + '</span>',
+            '      <h3 class="promotion-title">' + esc(text(slide, 'title')) + '</h3>',
+            '      <p class="promotion-text">' + esc(text(slide, 'text')) + '</p>',
+            '      <div class="promotion-actions">',
+            cta ? '        <a class="btn btn-primary py-2 px-4" href="' + esc(slide.cta_url || 'booking.html') + '">' + esc(cta) + '</a>' : '',
+            secondary ? '        <a class="btn btn-outline-primary py-2 px-4" href="' + esc(slide.secondary_url || 'menu.html') + '">' + esc(secondary) + '</a>' : '',
+            '      </div>',
+            '    </div>',
+            '  </article>',
+            '</div>'
+        ].join('\n');
+    }
+
+    function renderPromotions(promotions) {
+        var list = (promotions && promotions.slides) || [];
+        fill(mount('promotions'), list.map(promotionCard).join(''), '.promotion-help');
+    }
+
     /* ------------------------------------------------------------- gallery */
     function galleryItem(photo) {
         return [
@@ -391,6 +420,7 @@
     function renderAll() {
         if (cache.settings) renderSettings(cache.settings.site);
         if (cache.settings) renderVideo(cache.settings.site);
+        if (cache.settings) renderPromotions(cache.settings.promotions);
         if (cache.courses) renderCourses(cache.courses.courses || []);
         if (cache.news) renderNews(cache.news.news || []);
         if (cache.events) renderEvents(cache.events.events || []);

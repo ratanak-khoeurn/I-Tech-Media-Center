@@ -32,5 +32,81 @@
     "video_text_km": "ទិដ្ឋភាពខ្លីៗនៅក្នុងថ្នាក់រៀន មន្ទីរកុំព្យូទ័រ និងថ្ងៃបញ្ចប់ការសិក្សារបស់យើង។",
     "video_cta_en": "Watch the video",
     "video_cta_km": "មើលវីដេអូ"
+  },
+  "promotions": {
+    "enabled": true,
+    "id": "promo-2026-11-16",
+    "dismiss_days": 7,
+    "autoplay_seconds": 6,
+    "slides": [
+      {
+        "image": "promo-computer-office.jpg",
+        "image_alt_en": "Computer Office course poster: $45 with 20–30% discount, new class starts 16 November 2026",
+        "image_alt_km": "ផ្ទាំងផ្សព្វផ្សាយវគ្គកុំព្យូទ័រការិយាល័យ 45$ បញ្ចុះតម្លៃ 20%–30% ថ្នាក់ថ្មីចាប់ផ្តើម 16 វិច្ឆិកា 2026",
+        "eyebrow_en": "Limited Offer",
+        "eyebrow_km": "ឱកាសពិសេស",
+        "title_en": "Computer Office — $45 with 20–30% off",
+        "title_km": "វគ្គកុំព្យូទ័រការិយាល័យ 45$ បញ្ចុះតម្លៃ 20%–30%",
+        "text_en": "60 hours of Microsoft Office and Google Workspace training, Mon–Fri 6:00–7:30 PM. New class starts 16 November 2026.",
+        "text_km": "ការបណ្តុះបណ្តាល Microsoft Office និង Google Workspace 60 ម៉ោង ចន្ទ–សុក្រ ម៉ោង 6:00–7:30 ល្ងាច។ ថ្នាក់ថ្មីចាប់ផ្តើម 16 វិច្ឆិកា 2026។",
+        "cta_en": "Enroll now",
+        "cta_km": "ចុះឈ្មោះឥឡូវ",
+        "cta_url": "booking.html",
+        "secondary_en": "View courses",
+        "secondary_km": "មើលវគ្គសិក្សា",
+        "secondary_url": "menu.html"
+      },
+      {
+        "image": "promo-graphic-design.jpg",
+        "image_alt_en": "Graphic Design course poster: 40% off, Photoshop, Illustrator and InDesign",
+        "image_alt_km": "ផ្ទាំងផ្សព្វផ្សាយវគ្គរចនាក្រាហ្វិក បញ្ចុះតម្លៃ 40% Photoshop, Illustrator និង InDesign",
+        "eyebrow_en": "40% OFF",
+        "eyebrow_km": "បញ្ចុះតម្លៃ 40%",
+        "title_en": "Graphic Design — 40% off this intake",
+        "title_km": "ថ្នាក់សិក្សារចនាក្រាហ្វិក បញ្ចុះតម្លៃ 40%",
+        "text_en": "Photoshop, Illustrator and InDesign — colour theory, typography, layout and portfolio projects. 60 hours, Mon–Fri 6:00–7:30 PM.",
+        "text_km": "Photoshop, Illustrator និង InDesign — ការរៀបចំពណ៌ អក្សរ ប្លង់ និងគម្រោងផលប័ត្រ។ 60 ម៉ោង ចន្ទ–សុក្រ ម៉ោង 6:00–7:30 ល្ងាច។",
+        "cta_en": "Enroll now",
+        "cta_km": "ចុះឈ្មោះឥឡូវ",
+        "cta_url": "booking.html",
+        "secondary_en": "View courses",
+        "secondary_km": "មើលវគ្គសិក្សា",
+        "secondary_url": "menu.html"
+      },
+      {
+        "image": "promo-photography.jpg",
+        "image_alt_en": "Photography course poster: 50% off the beginner class",
+        "image_alt_km": "ផ្ទាំងផ្សព្វផ្សាយវគ្គថតរូប ថ្នាក់ដំបូងបញ្ចុះតម្លៃ 50%",
+        "eyebrow_en": "50% OFF",
+        "eyebrow_km": "បញ្ចុះតម្លៃ 50%",
+        "title_en": "Photography — 50% off beginner class",
+        "title_km": "ថ្នាក់ថតរូបថ្នាក់ដំបូង បញ្ចុះតម្លៃ 50%",
+        "text_en": "Learn camera basics, lighting and composition. 20 hours over 4 weeks, Saturday and Sunday 8:30–11:30 AM.",
+        "text_km": "រៀនមូលដ្ឋានកាមេរ៉ា ពន្លឺ និងការរៀបចំរូប។ 20 ម៉ោង រយៈពេល 4 សប្តាហ៍ សៅរ៍ និងអាទិត្យ ម៉ោង 8:30–11:30 ព្រឹក។",
+        "cta_en": "Enroll now",
+        "cta_km": "ចុះឈ្មោះឥឡូវ",
+        "cta_url": "booking.html",
+        "secondary_en": "View courses",
+        "secondary_km": "មើលវគ្គសិក្សា",
+        "secondary_url": "menu.html"
+      },
+      {
+        "image": "promo-robotics.jpg",
+        "image_alt_en": "Robotics course poster: ages 7–17, 12 weeks on Saturdays",
+        "image_alt_km": "ផ្ទាំងផ្សព្វផ្សាយវគ្គរ៉ូបូត អាយុ 7–17 ឆ្នាំ 12 សប្តាហ៍ រៀនថ្ងៃសៅរ៍",
+        "eyebrow_en": "New Intake",
+        "eyebrow_km": "ថ្នាក់ថ្មី",
+        "title_en": "Robotics for kids — now open",
+        "title_km": "ថ្នាក់រ៉ូបូតសម្រាប់កុមារ — បើកចុះឈ្មោះហើយ",
+        "text_en": "Ages 7–17. 12 weeks every Saturday, 8:30–10:30 AM, taught in English.",
+        "text_km": "អាយុ 7–17 ឆ្នាំ។ 12 សប្តាហ៍ រៀនរាល់ថ្ងៃសៅរ៍ ម៉ោង 8:30–10:30 ព្រឹក បង្រៀនជាភាសាអង់គ្លេស។",
+        "cta_en": "Enroll now",
+        "cta_km": "ចុះឈ្មោះឥឡូវ",
+        "cta_url": "booking.html",
+        "secondary_en": "View courses",
+        "secondary_km": "មើលវគ្គសិក្សា",
+        "secondary_url": "menu.html"
+      }
+    ]
   }
 }

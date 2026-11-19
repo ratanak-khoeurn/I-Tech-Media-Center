@@ -286,6 +286,13 @@
         'Monday - Friday: 8:00 AM - 7:30 PM · Saturday - Sunday: 8:30 AM - 11:30 AM': 'ចន្ទ - សុក្រ៖ 8:00 ព្រឹក - 7:30 ល្ងាច · សៅរ៍ - អាទិត្យ៖ 8:30 ព្រឹក - 11:30 ព្រឹក',
         'Get directions': 'មើលទិសដៅ',
 
+        'Promotions': 'ការផ្សព្វផ្សាយ',
+        'Current Promotions': 'ការផ្សព្វផ្សាយបច្ចុប្បន្ន',
+        'Check the latest offers on our most popular courses. Each poster shows the course, price, schedule and start date.': 'មើលឱកាសថ្មីៗសម្រាប់វគ្គសិក្សាពេញនិយមរបស់យើង។ ផ្ទាំងផ្សព្វផ្សាយនីមួយៗបង្ហាញវគ្គសិក្សា តម្លៃ កាលវិភាគ និងកាលបរិច្ឆេទចាប់ផ្តើម។',
+        'Need help choosing?': 'ត្រូវការជំនួយក្នុងការជ្រើសរើស?',
+        'Talk to our team about schedules, prices and payment options, or reserve your seat online.': 'និយាយជាមួយក្រុមការងារយើងអំពីកាលវិភាគ តម្លៃ និងជម្រើសបង់ប្រាក់ ឬកក់កៅអីរបស់អ្នកតាមអនឡាញ។',
+        'Contact us': 'ទាក់ទងយើង',
+
         'Student Admission Form': 'ទម្រង់ចុះឈ្មោះសិស្ស',
         'Complete the official admission form to apply. Our team will contact you after submission.': 'បំពេញទម្រង់ចុះឈ្មោះផ្លូវការដើម្បីដាក់ពាក្យ។ ក្រុមការងារយើងនឹងទាក់ទងអ្នកបន្ទាប់ពីដាក់ស្នើ។',
         "What you'll need": 'អ្វីដែលអ្នកត្រូវការ',
@@ -406,6 +413,12 @@
             titleKm: 'កម្មវិធី | I-Tech Media Center',
             description: 'Join upcoming I-Tech Media events: open days, free trial classes, certification info sessions and creative workshops in Phnom Penh.',
             descriptionKm: 'ចូលរួមកម្មវិធីនាពេលខាងមុខរបស់ I-Tech Media៖ ថ្ងៃបើកទ្វារ ថ្នាក់សាកល្បងឥតគិតថ្លៃ សិក្ខាសាលាផ្តល់ព័ត៌មានវិញ្ញាបនបត្រ និងសិក្ខាសាលាច្នៃប្រឌិត នៅភ្នំពេញ។'
+        },
+        'promotion.html': {
+            title: 'Promotions | I-Tech Media Center',
+            titleKm: 'ការផ្សព្វផ្សាយ | I-Tech Media Center',
+            description: 'See current I-Tech Media course promotions: discounts on computer office, graphic design, photography and robotics classes, with prices, schedules and start dates.',
+            descriptionKm: 'មើលការផ្សព្វផ្សាយវគ្គសិក្សាបច្ចុប្បន្នរបស់ I-Tech Media៖ បញ្ចុះតម្លៃវគ្គកុំព្យូទ័រការិយាល័យ រចនាក្រាហ្វិក ការថតរូប និងរ៉ូបូត ជាមួយតម្លៃ កាលវិភាគ និងកាលបរិច្ឆេទចាប់ផ្តើម។'
         },
         'gallery.html': {
             title: 'Gallery | I-Tech Media Center',

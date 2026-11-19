@@ -117,6 +117,76 @@ content:
           - name: video_cta_km
             label: Play button label (Khmer)
             type: string
+      - name: promotions
+        label: Opening popup
+        description: Promotion carousel shown when visitors open the website.
+        type: object
+        fields:
+          - name: enabled
+            label: Show the popup
+            type: boolean
+          - name: id
+            label: Campaign ID
+            description: Change this when you publish new posters so the popup shows again to everyone.
+            type: string
+          - name: dismiss_days
+            label: Hide for (days) after closing
+            type: number
+          - name: autoplay_seconds
+            label: Auto-advance every (seconds)
+            description: Set 0 to turn autoplay off.
+            type: number
+          - name: slides
+            label: Posters
+            type: object
+            list: true
+            fields:
+              - name: image
+                label: Poster image
+                type: image
+              - name: image_alt_en
+                label: Poster description (English)
+                type: string
+              - name: image_alt_km
+                label: Poster description (Khmer)
+                type: string
+              - name: eyebrow_en
+                label: Small label (English)
+                type: string
+              - name: eyebrow_km
+                label: Small label (Khmer)
+                type: string
+              - name: title_en
+                label: Title (English)
+                type: string
+              - name: title_km
+                label: Title (Khmer)
+                type: string
+              - name: text_en
+                label: Text (English)
+                type: text
+              - name: text_km
+                label: Text (Khmer)
+                type: text
+              - name: cta_en
+                label: Button label (English)
+                type: string
+              - name: cta_km
+                label: Button label (Khmer)
+                type: string
+              - name: cta_url
+                label: Button link
+                description: Page the button opens, for example booking.html
+                type: string
+              - name: secondary_en
+                label: Second link (English)
+                type: string
+              - name: secondary_km
+                label: Second link (Khmer)
+                type: string
+              - name: secondary_url
+                label: Second link page
+                type: string
 
   # ----------------------------------------------------------------- courses
   - name: courses
