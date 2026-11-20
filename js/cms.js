@@ -64,6 +64,15 @@
         return 'img/' + src;
     }
 
+    function slug(value) {
+        return String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    }
+
+    function courseCategory(course) {
+        if (course.group === 'international') return 'certification';
+        return slug(course.tag_en || course.tag || '') || 'local';
+    }
+
     function load(name) {
         return fetch('content/' + name + '.json', { cache: 'no-store' })
             .then(function (res) { return res.ok ? res.json() : null; })
@@ -97,7 +106,7 @@
         }).join('');
         var note = text(course, 'note');
         return [
-            '<div class="col-xl-4 col-md-6">',
+            '<div class="col-xl-4 col-md-6" data-filter-item data-category="' + esc(courseCategory(course)) + '">',
             '  <article class="course-card">',
             '    <div class="course-card-top">',
             '      <div class="course-card-icon"><i class="' + esc(course.icon || 'fa fa-book') + '" aria-hidden="true"></i></div>',
@@ -166,7 +175,7 @@
         var badge = text(post, 'badge');
         var second = text(post, 'second_link_label');
         return [
-            '<div class="col-12">',
+            '<div class="col-12" data-filter-item>',
             '  <article class="news-card news-featured rounded overflow-hidden bg-white shadow-sm">',
             '    <div class="row g-0">',
             '      <div class="col-lg-6 news-media">',
@@ -190,7 +199,7 @@
 
     function newsCard(post) {
         return [
-            '<div class="col-lg-4 col-md-6">',
+            '<div class="col-lg-4 col-md-6" data-filter-item>',
             '  <article class="news-card h-100 rounded overflow-hidden bg-white shadow-sm d-flex flex-column">',
             '    <div class="news-media">',
             '      <img src="' + esc(media(post.image)) + '" alt="' + esc(text(post, 'title')) + '">',
@@ -273,7 +282,7 @@
     /* ------------------------------------------------------------- gallery */
     function galleryItem(photo) {
         return [
-            '<figure class="gallery-item" data-category="' + esc(photo.category) + '">',
+            '<figure class="gallery-item" data-filter-item data-category="' + esc(photo.category) + '">',
             '  <div class="gallery-media">',
             '    <img src="' + esc(media(photo.image)) + '" alt="' + esc(text(photo, 'alt')) + '" loading="lazy">',
             '  </div>',
@@ -286,7 +295,6 @@
         var grid = mount('gallery');
         if (!grid) return;
         grid.innerHTML = list.map(galleryItem).join('');
-        document.dispatchEvent(new CustomEvent('cms:gallery'));
     }
 
     /* ---------------------------------------------------------- instructors */
@@ -299,7 +307,7 @@
         var photo = media(person.photo);
 
         return [
-            '<div class="col-lg-3 col-md-6">',
+            '<div class="col-lg-3 col-md-6" data-filter-item data-search="' + esc([name, role, subject, bio].join(' ')) + '">',
             '  <article class="team-item text-center" role="button" tabindex="0" aria-haspopup="dialog" data-instructor',
             '    data-name="' + esc(name) + '" data-role="' + esc(role) + '" data-subject="' + esc(subject) + '"',
             '    data-photo="' + esc(photo) + '" data-bio="' + esc(bio) + '"',
@@ -426,6 +434,7 @@
         if (cache.events) renderEvents(cache.events.events || []);
         if (cache.gallery) renderGallery(cache.gallery.photos || []);
         if (cache.instructors) renderInstructors(cache.instructors.instructors || []);
+        document.dispatchEvent(new CustomEvent('cms:rendered'));
     }
 
     var collections = ['settings', 'courses', 'news', 'events', 'gallery', 'instructors'];

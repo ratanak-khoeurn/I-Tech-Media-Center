@@ -78,15 +78,22 @@
 
         <!-- News Start -->
         <div class="container-xxl py-5">
-            <div class="container">
+            <div class="container" data-filter-scope="news">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h5 class="section-title ff-secondary text-center text-primary fw-normal">News &amp; Updates</h5>
                     <h1 class="mb-4">Latest from I-Tech Media</h1>
-                    <p class="mb-5 mx-auto" style="max-width: 640px;">Course announcements, campus updates and student success stories.</p>
+                    <p class="mb-4 mx-auto" style="max-width: 640px;">Course announcements, campus updates and student success stories.</p>
+                </div>
+
+                <div class="filter-bar filter-bar-center wow fadeInUp" data-wow-delay="0.2s">
+                    <label class="filter-search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <input type="search" data-filter-search placeholder="Search news..." aria-label="Search news">
+                    </label>
                 </div>
 
                 <div class="row g-4" data-cms="news">
-                    <div class="col-12 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-12 wow fadeInUp" data-wow-delay="0.1s" data-filter-item>
                         <article class="news-card news-featured rounded overflow-hidden bg-white shadow-sm">
                             <div class="row g-0">
                                 <div class="col-lg-6 news-media">
@@ -106,7 +113,7 @@
                         </article>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-filter-item>
                         <article class="news-card h-100 rounded overflow-hidden bg-white shadow-sm d-flex flex-column">
                             <div class="news-media">
                                 <img src="img/training-2.jpg" alt="Pearson certification preparation at I-Tech Media">
@@ -120,7 +127,7 @@
                         </article>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s" data-filter-item>
                         <article class="news-card h-100 rounded overflow-hidden bg-white shadow-sm d-flex flex-column">
                             <div class="news-media">
                                 <img src="img/training-3.jpg" alt="Hands-on creative media lab at I-Tech Media">
@@ -134,7 +141,7 @@
                         </article>
                     </div>
 
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.7s" data-filter-item>
                         <article class="news-card h-100 rounded overflow-hidden bg-white shadow-sm d-flex flex-column">
                             <div class="news-media">
                                 <img src="img/training-4.jpg" alt="Career-focused training at I-Tech Media">
@@ -162,6 +169,8 @@
                         </div>
                     </div>
                 </div>
+
+                <p class="filter-empty" data-filter-empty hidden>No results found. Try a different search.</p>
             </div>
         </div>
         <!-- News End -->
@@ -190,6 +199,7 @@
     <script src="js/i18n.js"></script>
     <script src="js/chatbot.js"></script>
     <script src="js/cms.js"></script>
+    <script src="js/filters.js"></script>
     <script src="js/popup.js"></script>
 </body>
 

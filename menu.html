@@ -78,6 +78,7 @@
 
 
         <!-- Courses Intro Start -->
+        <div data-filter-scope="courses">
         <div class="container-xxl course-intro-section">
             <div class="container">
                 <div class="course-intro text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -85,13 +86,26 @@
                     <h1 class="mb-3">Programs That Build Careers</h1>
                     <p class="course-intro-text mb-0">Choose from local skills programs or internationally recognised professional certifications — each built around hands-on practice, small classes and work you can show employers.</p>
                 </div>
+                <div class="filter-bar filter-bar-center wow fadeInUp" data-wow-delay="0.2s">
+                    <label class="filter-search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <input type="search" data-filter-search placeholder="Search courses..." aria-label="Search courses">
+                    </label>
+                    <div class="filter-chips" role="group" aria-label="Course categories">
+                        <button type="button" class="filter-chip active" data-filter-category="all" aria-pressed="true">All</button>
+                        <button type="button" class="filter-chip" data-filter-category="computer-skills" aria-pressed="false">Computer Skills</button>
+                        <button type="button" class="filter-chip" data-filter-category="technical-skills" aria-pressed="false">Technical Skills</button>
+                        <button type="button" class="filter-chip" data-filter-category="digital-media" aria-pressed="false">Digital Media</button>
+                        <button type="button" class="filter-chip" data-filter-category="certification" aria-pressed="false">Certifications</button>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Courses Intro End -->
 
 
         <!-- Local Courses Start -->
-        <div class="course-section course-section-local">
+        <div class="course-section course-section-local" data-filter-section>
             <div class="container">
                 <div class="course-section-head wow fadeInUp" data-wow-delay="0.1s">
                     <div>
@@ -104,7 +118,7 @@
                 <div class="row g-4" data-cms="courses-local">
 
                     <!-- Computer Office -->
-                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" data-filter-item data-category="computer-skills">
                         <article class="course-card">
                             <div class="course-card-top">
                                 <div class="course-card-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
@@ -130,7 +144,7 @@
                     </div>
 
                     <!-- Robotics -->
-                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s" data-filter-item data-category="technical-skills">
                         <article class="course-card">
                             <div class="course-card-top">
                                 <div class="course-card-icon"><i class="fa fa-robot" aria-hidden="true"></i></div>
@@ -156,7 +170,7 @@
                     </div>
 
                     <!-- Graphic Design -->
-                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-filter-item data-category="digital-media">
                         <article class="course-card">
                             <div class="course-card-top">
                                 <div class="course-card-icon"><i class="fa fa-palette" aria-hidden="true"></i></div>
@@ -182,7 +196,7 @@
                     </div>
 
                     <!-- Photography for Professional -->
-                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" data-filter-item data-category="digital-media">
                         <article class="course-card">
                             <div class="course-card-top">
                                 <div class="course-card-icon"><i class="fa fa-camera-retro" aria-hidden="true"></i></div>
@@ -209,7 +223,7 @@
                     </div>
 
                     <!-- Photography for Beginner -->
-                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s" data-filter-item data-category="digital-media">
                         <article class="course-card">
                             <div class="course-card-top">
                                 <div class="course-card-icon"><i class="fa fa-camera" aria-hidden="true"></i></div>
@@ -235,7 +249,7 @@
                     </div>
 
                     <!-- Cinematography -->
-                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-filter-item data-category="digital-media">
                         <article class="course-card">
                             <div class="course-card-top">
                                 <div class="course-card-icon"><i class="fa fa-film" aria-hidden="true"></i></div>
@@ -267,7 +281,7 @@
 
 
         <!-- International Courses Start -->
-        <div class="course-section course-section-intl">
+        <div class="course-section course-section-intl" data-filter-section>
             <div class="container">
                 <div class="course-section-head wow fadeInUp" data-wow-delay="0.1s">
                     <div>
@@ -280,7 +294,7 @@
                 <div class="row g-4" data-cms="courses-intl">
 
                     <!-- Generative AI -->
-                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" data-filter-item data-category="certification">
                         <article class="course-card">
                             <div class="course-card-top">
                                 <div class="course-card-icon"><i class="fa fa-brain" aria-hidden="true"></i></div>
@@ -306,7 +320,7 @@
                     </div>
 
                     <!-- CyberSecurity -->
-                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s" data-filter-item data-category="certification">
                         <article class="course-card">
                             <div class="course-card-top">
                                 <div class="course-card-icon"><i class="fa fa-shield-alt" aria-hidden="true"></i></div>
@@ -332,7 +346,7 @@
                     </div>
 
                     <!-- Software Development -->
-                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s" data-filter-item data-category="certification">
                         <article class="course-card">
                             <div class="course-card-top">
                                 <div class="course-card-icon"><i class="fa fa-code" aria-hidden="true"></i></div>
@@ -362,6 +376,10 @@
             </div>
         </div>
         <!-- International Courses End -->
+
+        <p class="filter-empty" data-filter-empty hidden>No results found. Try a different search.</p>
+        </div>
+        <!-- Course Filters End -->
         
 
                 <!-- Footer Start -->
@@ -389,6 +407,7 @@
     <script src="js/i18n.js"></script>
     <script src="js/chatbot.js"></script>
     <script src="js/cms.js"></script>
+    <script src="js/filters.js"></script>
     <script src="js/popup.js"></script>
 </body>
 

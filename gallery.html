@@ -105,138 +105,147 @@
 
         <!-- Gallery Start -->
         <div class="container-xxl py-5">
-            <div class="container">
+            <div class="container" data-filter-scope="gallery">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h5 class="section-title ff-secondary text-center text-primary fw-normal">Our Gallery</h5>
                     <h1 class="mb-4">Life at I-Tech Media</h1>
-                    <p class="mb-5 mx-auto" style="max-width: 640px;">Moments from our classes, certificate presentations and campus life.</p>
+                    <p class="mb-4 mx-auto" style="max-width: 640px;">Moments from our classes, certificate presentations and campus life.</p>
+                </div>
+
+                <div class="filter-bar filter-bar-center wow fadeInUp" data-wow-delay="0.15s">
+                    <label class="filter-search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <input type="search" data-filter-search placeholder="Search photos..." aria-label="Search photos">
+                    </label>
                 </div>
 
                 <div class="gallery-tabs wow fadeInUp" data-wow-delay="0.2s" role="tablist" aria-label="Gallery categories">
-                    <button type="button" class="gallery-tab active" role="tab" aria-selected="true" data-filter="all">All</button>
-                    <button type="button" class="gallery-tab" role="tab" aria-selected="false" data-filter="graduation">Graduation</button>
-                    <button type="button" class="gallery-tab" role="tab" aria-selected="false" data-filter="class">Class Activities</button>
-                    <button type="button" class="gallery-tab" role="tab" aria-selected="false" data-filter="campus">Our Campus</button>
+                    <button type="button" class="gallery-tab" role="tab" aria-selected="true" data-filter-category="all">All</button>
+                    <button type="button" class="gallery-tab" role="tab" aria-selected="false" data-filter-category="graduation">Graduation</button>
+                    <button type="button" class="gallery-tab" role="tab" aria-selected="false" data-filter-category="class">Class Activities</button>
+                    <button type="button" class="gallery-tab" role="tab" aria-selected="false" data-filter-category="campus">Our Campus</button>
                 </div>
 
                 <div class="gallery-grid wow fadeInUp" data-wow-delay="0.3s" data-cms="gallery">
-                    <figure class="gallery-item" data-category="graduation">
+                    <figure class="gallery-item" data-filter-item data-category="graduation">
                         <div class="gallery-media">
                             <img src="img/gallery/graduation-1.jpg" alt="Certificate presentation ceremony" loading="lazy">
                         </div>
                         <figcaption>Certificate presentation ceremony</figcaption>
                     </figure>
-                    <figure class="gallery-item" data-category="graduation">
+                    <figure class="gallery-item" data-filter-item data-category="graduation">
                         <div class="gallery-media">
                             <img src="img/gallery/graduation-2.jpg" alt="Digital skills certificate award" loading="lazy">
                         </div>
                         <figcaption>Digital skills certificate award</figcaption>
                     </figure>
-                    <figure class="gallery-item" data-category="graduation">
+                    <figure class="gallery-item" data-filter-item data-category="graduation">
                         <div class="gallery-media">
                             <img src="img/gallery/graduation-3.jpg" alt="Graduates celebrate their achievement" loading="lazy">
                         </div>
                         <figcaption>Graduates celebrate their achievement</figcaption>
                     </figure>
-                    <figure class="gallery-item" data-category="graduation">
+                    <figure class="gallery-item" data-filter-item data-category="graduation">
                         <div class="gallery-media">
                             <img src="img/gallery/graduation-4.jpg" alt="Certificate handover at I-Tech Media" loading="lazy">
                         </div>
                         <figcaption>Certificate handover at I-Tech Media</figcaption>
                     </figure>
-                    <figure class="gallery-item" data-category="graduation">
+                    <figure class="gallery-item" data-filter-item data-category="graduation">
                         <div class="gallery-media">
                             <img src="img/gallery/graduation-5.jpg" alt="Workforce skills certificate" loading="lazy">
                         </div>
                         <figcaption>Workforce skills certificate</figcaption>
                     </figure>
-                    <figure class="gallery-item" data-category="graduation">
+                    <figure class="gallery-item" data-filter-item data-category="graduation">
                         <div class="gallery-media">
                             <img src="img/gallery/graduation-6.jpg" alt="Team certificate presentation" loading="lazy">
                         </div>
                         <figcaption>Team certificate presentation</figcaption>
                     </figure>
-                    <figure class="gallery-item" data-category="graduation">
+                    <figure class="gallery-item" data-filter-item data-category="graduation">
                         <div class="gallery-media">
                             <img src="img/gallery/graduation-7.jpg" alt="Graduation day group photo" loading="lazy">
                         </div>
                         <figcaption>Graduation day group photo</figcaption>
                     </figure>
 
-                    <figure class="gallery-item" data-category="class">
+                    <figure class="gallery-item" data-filter-item data-category="class">
                         <div class="gallery-media">
                             <img src="img/gallery/class-1.jpg" alt="Computer lab practice" loading="lazy">
                         </div>
                         <figcaption>Computer lab practice</figcaption>
                     </figure>
-                    <figure class="gallery-item" data-category="class">
+                    <figure class="gallery-item" data-filter-item data-category="class">
                         <div class="gallery-media">
                             <img src="img/gallery/class-2.jpg" alt="Guided practice session" loading="lazy">
                         </div>
                         <figcaption>Guided practice session</figcaption>
                     </figure>
-                    <figure class="gallery-item" data-category="class">
+                    <figure class="gallery-item" data-filter-item data-category="class">
                         <div class="gallery-media">
                             <img src="img/gallery/class-3.jpg" alt="Students at their workstations" loading="lazy">
                         </div>
                         <figcaption>Students at their workstations</figcaption>
                     </figure>
-                    <figure class="gallery-item" data-category="class">
+                    <figure class="gallery-item" data-filter-item data-category="class">
                         <div class="gallery-media">
                             <img src="img/gallery/class-4.jpg" alt="Hands-on computer class" loading="lazy">
                         </div>
                         <figcaption>Hands-on computer class</figcaption>
                     </figure>
-                    <figure class="gallery-item" data-category="class">
+                    <figure class="gallery-item" data-filter-item data-category="class">
                         <div class="gallery-media">
                             <img src="img/gallery/class-5.jpg" alt="Learning together in the lab" loading="lazy">
                         </div>
                         <figcaption>Learning together in the lab</figcaption>
                     </figure>
-                    <figure class="gallery-item" data-category="class">
+                    <figure class="gallery-item" data-filter-item data-category="class">
                         <div class="gallery-media">
                             <img src="img/gallery/class-6.jpg" alt="Evening computer class" loading="lazy">
                         </div>
                         <figcaption>Evening computer class</figcaption>
                     </figure>
-                    <figure class="gallery-item" data-category="class">
+                    <figure class="gallery-item" data-filter-item data-category="class">
                         <div class="gallery-media">
                             <img src="img/gallery/class-7.jpg" alt="Practical lab session" loading="lazy">
                         </div>
                         <figcaption>Practical lab session</figcaption>
                     </figure>
-                    <figure class="gallery-item" data-category="class">
+                    <figure class="gallery-item" data-filter-item data-category="class">
                         <div class="gallery-media">
                             <img src="img/gallery/class-8.jpg" alt="Classroom practice" loading="lazy">
                         </div>
                         <figcaption>Classroom practice</figcaption>
                     </figure>
-                    <figure class="gallery-item" data-category="class">
+                    <figure class="gallery-item" data-filter-item data-category="class">
                         <div class="gallery-media">
                             <img src="img/gallery/class-9.jpg" alt="Study session in the lab" loading="lazy">
                         </div>
                         <figcaption>Study session in the lab</figcaption>
                     </figure>
 
-                    <figure class="gallery-item" data-category="campus">
+                    <figure class="gallery-item" data-filter-item data-category="campus">
                         <div class="gallery-media">
                             <img src="img/gallery/campus-1.jpg" alt="I-Tech Media campus entrance" loading="lazy">
                         </div>
                         <figcaption>I-Tech Media campus entrance</figcaption>
                     </figure>
-                    <figure class="gallery-item" data-category="campus">
+                    <figure class="gallery-item" data-filter-item data-category="campus">
                         <div class="gallery-media">
                             <img src="img/gallery/campus-2.jpg" alt="Campus lounge and study area" loading="lazy">
                         </div>
                         <figcaption>Campus lounge and study area</figcaption>
                     </figure>
-                    <figure class="gallery-item" data-category="campus">
+                    <figure class="gallery-item" data-filter-item data-category="campus">
                         <div class="gallery-media">
                             <img src="img/gallery/campus-3.jpg" alt="Main computer lab" loading="lazy">
                         </div>
                         <figcaption>Main computer lab</figcaption>
                     </figure>
                 </div>
+
+                <p class="filter-empty" data-filter-empty hidden>No results found. Try a different search.</p>
 
                 <div class="col-12 mt-5 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="gallery-cta rounded p-4 p-lg-5 d-flex flex-column flex-lg-row align-items-lg-center justify-content-lg-between gap-4">
@@ -292,9 +301,9 @@
     <script src="js/main.js"></script>
     <script src="js/i18n.js"></script>
     <script src="js/chatbot.js"></script>
-    <script src="js/gallery.js"></script>
     <script src="js/video-sound.js"></script>
     <script src="js/cms.js"></script>
+    <script src="js/filters.js"></script>
     <script src="js/popup.js"></script>
 </body>
 

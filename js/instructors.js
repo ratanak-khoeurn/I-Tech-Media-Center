@@ -46,7 +46,8 @@
     function card(person, delay) {
         var alt = person.name + ', ' + person.role;
         return [
-            '<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="' + delay + 's">',
+            '<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="' + delay + 's" data-filter-item',
+            '    data-search="' + esc([person.name, person.role, person.subject, person.bio].join(' ')) + '">',
             '    <article class="team-item text-center" role="button" tabindex="0" aria-haspopup="dialog" data-instructor',
             '        data-name="' + esc(person.name) + '" data-role="' + esc(person.role) + '" data-subject="' + esc(person.subject) + '"',
             '        data-photo="img/' + esc(person.photo) + '" data-bio="' + esc(person.bio) + '"',
@@ -65,16 +66,23 @@
 
     var html = [
         '<div class="container-xxl py-5">',
-        '    <div class="container">',
+        '    <div class="container" data-filter-scope="instructors">',
         '        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">',
         '            <h5 class="section-title ff-secondary text-center text-primary fw-normal">Our Team</h5>',
-        '            <h1 class="mb-5">Meet Our Instructors</h1>',
+        '            <h1 class="mb-4">Meet Our Instructors</h1>',
+        '        </div>',
+        '        <div class="filter-bar filter-bar-center wow fadeInUp" data-wow-delay="0.2s">',
+        '            <label class="filter-search">',
+        '                <i class="fa fa-search" aria-hidden="true"></i>',
+        '                <input type="search" data-filter-search placeholder="Search instructors..." aria-label="Search instructors">',
+        '            </label>',
         '        </div>',
         '        <div class="row g-4" data-cms="instructors">',
         PEOPLE.map(function (person, i) {
             return card(person, (0.1 + i * 0.2).toFixed(1));
         }).join('\n'),
         '        </div>',
+        '        <p class="filter-empty" data-filter-empty hidden>No results found. Try a different search.</p>',
         '    </div>',
         '</div>',
         '<div class="modal fade" id="instructorModal" tabindex="-1" aria-labelledby="instructorModalName" aria-hidden="true">',
