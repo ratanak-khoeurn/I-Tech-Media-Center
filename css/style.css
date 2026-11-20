@@ -2616,6 +2616,129 @@ html[lang="km"] .promotion-eyebrow {
     }
 }
 
+/* Partners page */
+.partner-card {
+    display: grid;
+    grid-template-columns: minmax(0, 34%) minmax(0, 66%);
+    height: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border: 1px solid #E6EEF6;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.partner-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 36px rgba(15, 23, 43, .12);
+}
+
+.partner-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 28px;
+    background: #F4F9FD;
+    border-right: 1px solid #E6EEF6;
+}
+
+.partner-media img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+}
+
+.partner-body {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 30px;
+}
+
+.partner-badge {
+    align-self: flex-start;
+    margin-bottom: 14px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    background: rgba(249, 160, 31, .14);
+    color: var(--accent-dark);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+
+.partner-title {
+    margin-bottom: .6rem;
+    color: var(--dark);
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.partner-text {
+    margin-bottom: 1rem;
+    color: #6B7280;
+}
+
+.partner-points {
+    display: grid;
+    gap: 10px;
+    margin: 0 0 1.4rem;
+    padding: 0;
+    list-style: none;
+}
+
+.partner-points li {
+    display: flex;
+    gap: 10px;
+    color: #40505F;
+    font-size: .95rem;
+}
+
+.partner-points i {
+    margin-top: 4px;
+    color: var(--primary);
+}
+
+.partner-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: auto;
+}
+
+.partner-cta {
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+}
+
+html[lang="km"] .partner-badge {
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+@media (max-width: 991.98px) {
+    .partner-card {
+        grid-template-columns: 1fr;
+    }
+
+    .partner-media {
+        border-right: 0;
+        border-bottom: 1px solid #E6EEF6;
+        padding: 24px;
+    }
+
+    .partner-media img {
+        max-width: 160px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .partner-body {
+        padding: 24px 22px;
+    }
+}
+
 /* Video highlight banner */
 .video-highlight {
     position: relative;

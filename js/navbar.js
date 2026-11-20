@@ -4,7 +4,7 @@
         file = 'index.html';
     }
 
-    var pages = ['booking.html', 'team.html', 'testimonial.html', 'news.html', 'event.html', 'promotion.html', 'gallery.html'];
+    var pages = ['booking.html', 'team.html', 'testimonial.html', 'news.html', 'event.html', 'promotion.html', 'partner.html', 'gallery.html'];
     var onPages = pages.indexOf(file) !== -1;
 
     function navLink(href, label) {
@@ -39,6 +39,7 @@
         '                    <a href="event.html" class="dropdown-item">Events</a>',
         '                    <a href="promotion.html" class="dropdown-item">Promotions</a>',
         '                    <a href="gallery.html" class="dropdown-item">Gallery</a>',
+        '                    <a href="partner.html" class="dropdown-item">Partners</a>',
         '                </div>',
         '            </div>',
         '            ' + navLink('contact.html', 'Contact'),

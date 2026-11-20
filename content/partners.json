@@ -1,0 +1,22 @@
+{
+  "partners": [
+    {
+      "name": "Pearson",
+      "logo": "pearson_logo.png",
+      "alt_en": "Pearson Skilling Partner badge",
+      "alt_km": "សញ្ញាដៃគូអភិវឌ្ឍជំនាញ Pearson",
+      "badge_en": "Skilling Partner",
+      "badge_km": "ដៃគូអភិវឌ្ឍជំនាញ",
+      "description_en": "I-Tech Media is a Pearson Skilling Partner, bringing internationally recognised IT certification programs to Phnom Penh. Every certification course includes structured exam preparation and practice against the official exam objectives.",
+      "description_km": "I-Tech Media គឺជាដៃគូអភិវឌ្ឍជំនាញរបស់ Pearson ដែលនាំយកកម្មវិធីវិញ្ញាបនបត្រ IT ដែលទទួលស្គាល់ជាអន្តរជាតិមកកាន់ភ្នំពេញ។ វគ្គសិក្សាវិញ្ញាបនបត្រនីមួយៗរួមបញ្ចូលការរៀបចំសម្រាប់ការប្រឡង និងការអនុវត្តតាមគោលដៅប្រឡងផ្លូវការ។",
+      "points_en": "Internationally recognised IT certifications\nExam preparation built into every certification course\nCredentials that travel with you — study, work or migrate abroad",
+      "points_km": "វិញ្ញាបនបត្រ IT ដែលទទួលស្គាល់ជាអន្តរជាតិ\nការរៀបចំសម្រាប់ការប្រឡង រួមបញ្ចូលក្នុងវគ្គសិក្សាវិញ្ញាបនបត្រនីមួយៗ\nវិញ្ញាបនបត្រដែលអាចប្រើបាន ទោះរៀន ធ្វើការ ឬធ្វើចំណាកស្រុកទៅក្រៅប្រទេស",
+      "cta_en": "Explore certifications",
+      "cta_km": "មើលវិញ្ញាបនបត្រ",
+      "cta_url": "menu.html",
+      "secondary_en": "Contact us",
+      "secondary_km": "ទាក់ទងយើង",
+      "secondary_url": "contact.html"
+    }
+  ]
+}

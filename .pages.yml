@@ -8,6 +8,71 @@ media:
   extensions: [png, jpg, jpeg, webp, gif, svg]
 
 content:
+  # ---------------------------------------------------------------- partners
+  - name: partners
+    label: Partners
+    type: file
+    path: content/partners.json
+    fields:
+      - name: partners
+        label: Partner list
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Partner name
+            type: string
+            required: true
+          - name: logo
+            label: Logo
+            type: image
+          - name: alt_en
+            label: Logo description (English)
+            type: string
+          - name: alt_km
+            label: Logo description (Khmer)
+            type: string
+          - name: badge_en
+            label: Badge (English)
+            type: string
+            description: e.g. Skilling Partner
+          - name: badge_km
+            label: Badge (Khmer)
+            type: string
+          - name: description_en
+            label: Description (English)
+            type: text
+          - name: description_km
+            label: Description (Khmer)
+            type: text
+          - name: points_en
+            label: Highlights (English)
+            type: text
+            description: One highlight per line
+          - name: points_km
+            label: Highlights (Khmer)
+            type: text
+            description: One highlight per line
+          - name: cta_en
+            label: Button text (English)
+            type: string
+          - name: cta_km
+            label: Button text (Khmer)
+            type: string
+          - name: cta_url
+            label: Button link
+            description: Page the button opens, for example menu.html
+            type: string
+          - name: secondary_en
+            label: Second button text (English, optional)
+            type: string
+          - name: secondary_km
+            label: Second button text (Khmer, optional)
+            type: string
+          - name: secondary_url
+            label: Second button link
+            type: string
+
   # ---------------------------------------------------------------- settings
   - name: settings
     label: Site settings

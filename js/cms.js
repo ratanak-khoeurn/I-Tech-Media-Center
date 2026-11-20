@@ -279,6 +279,43 @@
         fill(mount('promotions'), list.map(promotionCard).join(''), '.promotion-help');
     }
 
+    /* -------------------------------------------------------------- partners */
+    function partnerCard(partner, wide) {
+        var name = partner.name || text(partner, 'name');
+        var badge = text(partner, 'badge');
+        var cta = text(partner, 'cta');
+        var secondary = text(partner, 'secondary');
+        var points = lines(text(partner, 'points')).map(function (point) {
+            return '<li><i class="fa fa-check" aria-hidden="true"></i>' + esc(point) + '</li>';
+        }).join('');
+        return [
+            '<div class="' + (wide ? 'col-12' : 'col-lg-6') + '">',
+            '  <article class="partner-card h-100">',
+            '    <div class="partner-media">',
+            '      <img src="' + esc(media(partner.logo)) + '" alt="' + esc(text(partner, 'alt') || name) + '" loading="lazy">',
+            '    </div>',
+            '    <div class="partner-body">',
+            badge ? '      <span class="partner-badge">' + esc(badge) + '</span>' : '',
+            '      <h3 class="partner-title">' + esc(name) + '</h3>',
+            '      <p class="partner-text">' + esc(text(partner, 'description')) + '</p>',
+            points ? '      <ul class="partner-points">' + points + '</ul>' : '',
+            '      <div class="partner-actions">',
+            cta ? '        <a class="btn btn-primary py-2 px-4" href="' + esc(partner.cta_url || 'menu.html') + '">' + esc(cta) + '</a>' : '',
+            secondary ? '        <a class="btn btn-outline-primary py-2 px-4" href="' + esc(partner.secondary_url || 'contact.html') + '">' + esc(secondary) + '</a>' : '',
+            '      </div>',
+            '    </div>',
+            '  </article>',
+            '</div>'
+        ].join('\n');
+    }
+
+    function renderPartners(list) {
+        var wide = list.length === 1;
+        fill(mount('partners'), list.map(function (partner) {
+            return partnerCard(partner, wide);
+        }).join(''));
+    }
+
     /* ------------------------------------------------------------- gallery */
     function galleryItem(photo) {
         return [
@@ -432,12 +469,13 @@
         if (cache.courses) renderCourses(cache.courses.courses || []);
         if (cache.news) renderNews(cache.news.news || []);
         if (cache.events) renderEvents(cache.events.events || []);
+        if (cache.partners) renderPartners(cache.partners.partners || []);
         if (cache.gallery) renderGallery(cache.gallery.photos || []);
         if (cache.instructors) renderInstructors(cache.instructors.instructors || []);
         document.dispatchEvent(new CustomEvent('cms:rendered'));
     }
 
-    var collections = ['settings', 'courses', 'news', 'events', 'gallery', 'instructors'];
+    var collections = ['settings', 'courses', 'news', 'events', 'partners', 'gallery', 'instructors'];
 
     function needed(name) {
         if (name === 'settings') return true;

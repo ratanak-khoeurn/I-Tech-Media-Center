@@ -293,6 +293,19 @@
         'Talk to our team about schedules, prices and payment options, or reserve your seat online.': 'និយាយជាមួយក្រុមការងារយើងអំពីកាលវិភាគ តម្លៃ និងជម្រើសបង់ប្រាក់ ឬកក់កៅអីរបស់អ្នកតាមអនឡាញ។',
         'Contact us': 'ទាក់ទងយើង',
 
+        'Partners': 'ដៃគូ',
+        'Partners Who Share Our Standards': 'ដៃគូដែលចែករំលែកស្តង់ដារដូចយើង',
+        'We team up with globally recognised organisations so our students learn on current tools and earn certificates employers trust.': 'យើងសហការជាមួយអង្គការដែលទទួលស្គាល់ជាអន្តរជាតិ ដើម្បីឱ្យសិស្សរបស់យើងរៀនលើឧបករណ៍ទំនើប និងទទួលបានវិញ្ញាបនបត្រដែលនិយោជកទុកចិត្ត។',
+        'Skilling Partner': 'ដៃគូអភិវឌ្ឍជំនាញ',
+        'Pearson Skilling Partner badge': 'សញ្ញាដៃគូអភិវឌ្ឍជំនាញ Pearson',
+        'I-Tech Media is a Pearson Skilling Partner, bringing internationally recognised IT certification programs to Phnom Penh. Every certification course includes structured exam preparation and practice against the official exam objectives.': 'I-Tech Media គឺជាដៃគូអភិវឌ្ឍជំនាញរបស់ Pearson ដែលនាំយកកម្មវិធីវិញ្ញាបនបត្រ IT ដែលទទួលស្គាល់ជាអន្តរជាតិមកកាន់ភ្នំពេញ។ វគ្គសិក្សាវិញ្ញាបនបត្រនីមួយៗរួមបញ្ចូលការរៀបចំសម្រាប់ការប្រឡង និងការអនុវត្តតាមគោលដៅប្រឡងផ្លូវការ។',
+        'Internationally recognised IT certifications': 'វិញ្ញាបនបត្រ IT ដែលទទួលស្គាល់ជាអន្តរជាតិ',
+        'Exam preparation built into every certification course': 'ការរៀបចំសម្រាប់ការប្រឡង រួមបញ្ចូលក្នុងវគ្គសិក្សាវិញ្ញាបនបត្រនីមួយៗ',
+        'Credentials that travel with you — study, work or migrate abroad': 'វិញ្ញាបនបត្រដែលអាចប្រើបាន ទោះរៀន ធ្វើការ ឬធ្វើចំណាកស្រុកទៅក្រៅប្រទេស',
+        'Explore certifications': 'មើលវិញ្ញាបនបត្រ',
+        'Interested in partnering with us?': 'ចង់ក្លាយជាដៃគូជាមួយយើង?',
+        'We work with schools, companies and training providers on shared programs, internships and graduate placement.': 'យើងសហការជាមួយសាលា ក្រុមហ៊ុន និងអ្នកផ្តល់ការបណ្តុះបណ្តាល លើកម្មវិធីរួម កម្មសិក្សា និងការដាក់ការងារសម្រាប់អ្នកបញ្ចប់ការសិក្សា។',
+
         'Student Admission Form': 'ទម្រង់ចុះឈ្មោះសិស្ស',
         'Complete the official admission form to apply. Our team will contact you after submission.': 'បំពេញទម្រង់ចុះឈ្មោះផ្លូវការដើម្បីដាក់ពាក្យ។ ក្រុមការងារយើងនឹងទាក់ទងអ្នកបន្ទាប់ពីដាក់ស្នើ។',
         "What you'll need": 'អ្វីដែលអ្នកត្រូវការ',
@@ -431,6 +444,12 @@
             titleKm: 'វិចិត្រសាល | I-Tech Media Center',
             description: 'See photos of I-Tech Media activities: certificate presentations, class activities, computer labs and our campus in Phnom Penh.',
             descriptionKm: 'មើលរូបថតសកម្មភាពរបស់ I-Tech Media៖ ពិធីប្រគល់វិញ្ញាបនបត្រ សកម្មភាពថ្នាក់រៀន មន្ទីរកុំព្យូទ័រ និងបរិវេណសាលានៅភ្នំពេញ។'
+        },
+        'partner.html': {
+            title: 'Our Partners | I-Tech Media Center',
+            titleKm: 'ដៃគូរបស់យើង | I-Tech Media Center',
+            description: 'Meet the organisations I-Tech Media partners with, including Pearson, so our students earn internationally recognised IT certifications.',
+            descriptionKm: 'ស្គាល់អង្គការដែល I-Tech Media សហការជាមួយ រួមទាំង Pearson ដើម្បីឱ្យសិស្សរបស់យើងទទួលបានវិញ្ញាបនបត្រ IT ដែលទទួលស្គាល់ជាអន្តរជាតិ។'
         }
     };
 

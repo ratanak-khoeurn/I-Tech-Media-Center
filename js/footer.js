@@ -26,6 +26,7 @@
       '                <a class="btn btn-link" href="event.html">Events</a>',
       '                <a class="btn btn-link" href="promotion.html">Promotions</a>',
       '                <a class="btn btn-link" href="gallery.html">Gallery</a>',
+      '                <a class="btn btn-link" href="partner.html">Partners</a>',
       '                <a class="btn btn-link" href="contact.html">Contact Us</a>',
       "            </div>",
       '            <div class="col-lg-3 col-md-6">',
